@@ -1,8 +1,27 @@
 /* CSS files add styling rules to your content */
 
-body {
+*{
+  margin: 0;
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
+}
+
+body {
+  display:flex;
+  flex-direction: row;
+  background: #F9F9F9;
+}
+
+main{
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+div.shadow{
+  position: absolute;
+  z-index: -1;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 200px rgba(0, 0, 0, 0.14);
+  border-radius: 14px;
 }
 
 h1 {
