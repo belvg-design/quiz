@@ -21,10 +21,15 @@ fetch("question.json")
                     sectionEnd.style.setProperty("display", "flex");
                     return;
                 }
-                answers[current] = input.value;
-                current++;
-                nextQuestion(current);
-                sectionQuestion.style.setProperty("animation", )
+                sectionQuestion.style.setProperty("animation", "1s 1 normal blink");
+                setTimeout(()=>{
+                    sectionQuestion.style.setProperty("animation", "none");
+                }, 1000)
+                setTimeout(()=>{
+                    answers[current] = input.value;
+                    current++;
+                    nextQuestion(current);
+                }, 500)
             })
             back.addEventListener("click",(e)=>{
                 if(current==0){

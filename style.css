@@ -11,6 +11,10 @@
   to { opacity: 1; } 
 }
 
+:root{
+
+}
+
 body {
   display: flex;
   flex-direction: column;
