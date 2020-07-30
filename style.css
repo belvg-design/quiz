@@ -32,7 +32,7 @@ main{
   box-sizing: border-box;
   min-height: 20vw;
   display: flex;
-  flex-direction: column;v
+  flex-direction: column;
 }
 div.shadow{
   position: absolute;
@@ -100,7 +100,6 @@ h1 {
   width: 250px;
   height: 50px;
   box-sizing: border-box;
-  font-family: sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -114,7 +113,9 @@ h1 {
 
 .question{
   flex-direction: column;
-  padding: 71px 5vw;
+  padding: 71px 0;
+  width: 670px;
+  align-self: center;
 }
 
 #questionNumber{
