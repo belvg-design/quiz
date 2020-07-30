@@ -6,24 +6,42 @@
 }
 
 body {
-  display:flex;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   background: #F9F9F9;
+  justify-content: center;
+  height: 100vh;
 }
 
 main{
   background: #FFFFFF;
   border-radius: 6px;
+  width: 70vw;
+  height: 50vh;
+  align-self: center;
 }
 div.shadow{
   position: absolute;
   z-index: -1;
+  margin-top: 10vh;
+  width: 50vw;
+  height: 40vh;
+  align-self: center;
   background: #FFFFFF;
   box-shadow: 0px 4px 200px rgba(0, 0, 0, 0.14);
   border-radius: 14px;
+}
+body > img{
+  position: absolute;
+  bottom: 10vh;
+  align-self: center;
 }
 
 h1 {
   font-style: italic;
   color: #373fff;
+}
+
+.question, .end{
+  display: none;
 }
