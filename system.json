@@ -1,5 +1,6 @@
 {    
-    "menu": ["English", "French"]
+    "lang": {"en":"English", "fr":"French", "de":"German", "ru":"Russian"},
+    "default":"en",
     "en":{
         "text": [
             [

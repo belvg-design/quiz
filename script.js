@@ -3,14 +3,16 @@ let start = document.querySelector("#start"),
     sectionQuestion = document.querySelector("#sectionQuestion"),
     sectionEnd = document.querySelector("#sectionEnd");
 
-let questions,
+let system,
+    questions,
     answers = [],
     current = 0;
 
-fetch("question.json")
+fetch("system.json")
     .then(response => response.json())
     .then(json =>{
-        questions = json;
+        system = json;
+        setLang(system.default);
         start.addEventListener("click",(e)=>{
             sectionStart.style.setProperty("display", "none");
             sectionQuestion.style.setProperty("display", "flex");
@@ -22,6 +24,12 @@ fetch("question.json")
             end.addEventListener("click", ()=>location.reload());
         })
     });
+
+function setLang(lang){
+    if(!system.lang[lang]) lang = system.default;
+    questions = system[lang].questions;
+    text = system[lang].text;
+}
 
 function nextQuestion(number){
     questionNumber.innerText = `Question ${number+1}/${questions.length}`;
