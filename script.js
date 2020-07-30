@@ -18,6 +18,7 @@ fetch("question.json")
             forward.addEventListener("click", goForward);
             back.addEventListener("click", goBack);
             input.addEventListener("input", checkInput)
+            company.addEventListener("input", checkInput)
         })
     });
 
@@ -33,14 +34,17 @@ function nextQuestion(number){
     if(number == questions.length-1){
         company.classList.remove("none");
         companyLabel.classList.remove("none");
+        forward.innerText = "Submit";
     }else{
         company.classList.add("none");
         companyLabel.classList.add("none");
+        forward.innerText = "Next Question";
     }
+    input.focus();
 
 }
 function goForward(e){
-    if(!checkInput({target:input})) return;
+    if(!checkInput()) return;
     if((current + 1)==questions.length){
         sectionQuestion.style.setProperty("display", "none");
         sectionEnd.style.setProperty("display", "flex");
@@ -51,7 +55,7 @@ function goForward(e){
     nextQuestion(current);
 }
 function goBack(e){
-    if(!checkInput({target:input}) || current==0){
+    if(current==0){
         return;
     }
     answers[current] = input.value;
@@ -59,16 +63,24 @@ function goBack(e){
     nextQuestion(current);
 }
 function checkInput(e){
-    if(input.value.trim() == "" &&((current==))){
+    if(input.value.trim() == "" ){
         back.disabled = true;
         forward.disabled = true;
+        if(e)e.target.focus();
+        else input.focus();
         return false;
-    }else{
-        back.disabled = false;
-        forward.disabled = false;
-        return true;
     }
-    console.log("input", `"${input.value.trim()}"`,input.value.trim()=="");
+    if(current == questions.length-1 && company.value.trim() == ""){
+        back.disabled = true;
+        forward.disabled = true;
+        if(e)e.target.focus();
+        else input.focus();
+        return false;
+    }
+    back.disabled = false;
+    forward.disabled = false;
+    return true;
+    //console.log("input", `"${input.value.trim()}"`,input.value.trim()=="");
 }
 
 
