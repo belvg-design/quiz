@@ -1,7 +1,8 @@
 let start = document.querySelector("#start"),
     sectionStart = document.querySelector("#sectionStart"),
     sectionQuestion = document.querySelector("#sectionQuestion"),
-    sectionEnd = document.querySelector("#sectionEnd");
+    sectionEnd = document.querySelector("#sectionEnd"),
+    langChanger = document.querySelector("#langChanger");
 
 let system,
     questions,
@@ -22,8 +23,14 @@ fetch("system.json")
             input.addEventListener("input", checkInput);
             company.addEventListener("input", checkInput);
             end.addEventListener("click", ()=>location.reload());
+            langChanger.onclick = openLang;
         })
     });
+
+function openLang(e){
+    console.log("kek");
+    language.classList.remove("hidden");
+}
 
 function setLang(lang){
     if(!system.lang[lang]) lang = system.default;
@@ -39,7 +46,7 @@ function refreshLang(){
 }
 
 function nextQuestion(number){
-    questionNumber.innerText = `Question ${number+1}/${questions.length}`;
+    questionNumber.children[1].innerText = ` ${number+1}/${questions.length}`;
     question.innerText = questions[number].quest;
     description.innerText = questions[number].descr;
     input.value = answers[number]?answers[number]: "";

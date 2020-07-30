@@ -71,6 +71,7 @@ footer > div > a {
   padding-right: 30px;
   text-decoration: none;
   transition-duration: 0.2s;
+  cursor:pointer;
 }
 footer > div > a:hover {
   color: #333;
