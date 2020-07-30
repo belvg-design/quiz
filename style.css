@@ -15,12 +15,12 @@ body {
 
 main{
   background: #FFFFFF;
-    border-radius: 14px;
-    width: 50vw;
-    /* height: 50vh; */
-    align-self: center;
-    padding: 4vw 2vw;
-    box-sizing: border-box;
+  border-radius: 14px;
+  width: 50vw;
+  /* height: 50vh; */
+  align-self: center;
+  padding: 4vw 2vw;
+  box-sizing: border-box;
 }
 div.shadow{
   position: absolute;
@@ -52,54 +52,52 @@ h1 {
   flex-direction: row;
 }
 .start > img{
-  
-  width: 50%;
+  width: 45%;
+  padding-left: 2%;
 }
 
 .start > div{
-  
-    width: 50%;
+  width: 45%;
     /* margin-top: 5vw; */
     padding: 2vw 0;
-    padding-left: 5vw;
+    padding-left: 3.4vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .start > div > span{
   font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 3vw;
-  line-height: 130%;
-  color: #000000;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.9vw;
+    line-height: 130%;
+    color: #000000;
 }
 
 .start > div > p{
   font-family: Roboto;
-  /* font-family: Roboto; */
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1.3vw;
-  line-height: 150%;
-  color: #666666;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8vw;
+    line-height: 150%;
+    color: #666666;
 }
 
 .start > div > button {
   background: #FF3366;
-  border-radius: 100vw;
-  border: none;
-  align-items: flex-start;
-  width: 60%;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1.2vw;
-  line-height: 100%;
-  color: #FFFFFF;
-  padding: 1vw;
-  outline: none;
-  cursor: pointer;
+    border-radius: 100vw;
+    border: none;
+    align-items: flex-start;
+    width: 10vw;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.7vw;
+    line-height: 100%;
+    color: #FFFFFF;
+    padding: 0.65vw;
+    outline: none;
+    cursor: pointer;
 }
