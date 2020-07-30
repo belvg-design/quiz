@@ -4,26 +4,41 @@ let start = document.querySelector("#start"),
     sectionEnd = document.querySelector("#sectionEnd");
 
 let questions,
-    answers = [];
+    answers = [],
+    current = 0;
 
-fetch("questions.json")
+fetch("question.json")
     .then(response => response.json())
     .then(json =>{
         questions = json;
         start.addEventListener("click",(e)=>{
             sectionStart.style.setProperty("display", "none");
             sectionQuestion.style.setProperty("display", "flex");
+            nextQuestion(current);
+            forward.addEventListener("click",(e)=>{
+                if((current + 1)==questions.length){
+                    sectionQuestion.style.setProperty("display", "none");
+                    sectionEnd.style.setProperty("display", "flex");
+                    return;
+                }
+                answers[current] = input.value;
+                current++;
+                nextQuestion(current);
+            })
+            back.addEventListener("click",(e)=>{
+                if(current==0){
+                    return;
+                }
+                answers[current] = input.value;
+                current--;
+                nextQuestion(current);
+            })
         })
     });
 
-nextQuestion(number){
+function nextQuestion(number){
     questionNumber.innerText = `Question ${number+1}/${questions.length}`;
     question.innerText = questions[number].quest;
     description.innerText = questions[number].descr;
-    input = answers[number]?answers[number]
+    input.value = answers[number]?answers[number]: "";
 }
-
-forward.addEventListener("click",(e)=>{
-    sectionQuestion.style.setProperty("display", "none");
-    sectionEnd.style.setProperty("display", "flex");
-})
