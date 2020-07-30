@@ -15,30 +15,8 @@ fetch("question.json")
             sectionStart.style.setProperty("display", "none");
             sectionQuestion.style.setProperty("display", "flex");
             nextQuestion(current);
-            forward.addEventListener("click",(e)=>{
-                if((current + 1)==questions.length){
-                    sectionQuestion.style.setProperty("display", "none");
-                    sectionEnd.style.setProperty("display", "flex");
-                    return;
-                }
-                sectionQuestion.style.setProperty("animation", "1s 1 normal blink");
-                setTimeout(()=>{
-                    sectionQuestion.style.setProperty("animation", "none");
-                }, 1000)
-                setTimeout(()=>{
-                    answers[current] = input.value;
-                    current++;
-                    nextQuestion(current);
-                }, 500)
-            })
-            back.addEventListener("click",(e)=>{
-                if(current==0){
-                    return;
-                }
-                answers[current] = input.value;
-                current--;
-                nextQuestion(current);
-            })
+            forward.addEventListener("click",goForward);
+            back.addEventListener("click",goBack);
         })
     });
 
@@ -48,3 +26,35 @@ function nextQuestion(number){
     description.innerText = questions[number].descr;
     input.value = answers[number]?answers[number]: "";
 }
+function goForward(e){
+    if((current + 1)==questions.length){
+        sectionQuestion.style.setProperty("display", "none");
+        sectionEnd.style.setProperty("display", "flex");
+        return;
+    }
+    answers[current] = input.value;
+    current++;
+    nextQuestion(current);
+}
+function goBack(e){
+    if(current==0){
+        return;
+    }
+    answers[current] = input.value;
+    current--;
+    nextQuestion(current);
+}
+function checkInput(e){
+    if(e.target.value.trim() == "")
+}
+
+
+//Effects
+/*
+sectionQuestion.style.setProperty("animation", "1s 1 normal blink");
+setTimeout(()=>{
+    sectionQuestion.style.setProperty("animation", "none");
+}, 1000)
+setTimeout(()=>{
+}, 500)
+*/
