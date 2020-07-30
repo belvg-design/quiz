@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <title>QUIZ</title>
+    <title>Survey</title>
     
-    <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
     
-    <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>  
   <body>
@@ -42,7 +40,7 @@
           <span>✓ All Done!</span>
           <p>We've just received your answers and now we are ready to start analyzing them.</p>
           <p class="description">Stay in touch, our manager will provide you with an update upon completion.</p>
-          <button id="start" class="button">Start New Survey</button>
+          <button id="end" class="button">Start New Survey</button>
         </div>
         <img src="https://cdn.glitch.com/a99d1791-21f1-4902-af72-751e1fde82f7%2Fillustration_2.svg?v=1596110412816">
       </div>
@@ -50,7 +48,14 @@
     <div class="shadow"></div>
     <footer>
       <div class="links">
-        <a>Not your Language?</a>
+        <a>Not your Language?
+          <ul id="language">
+            <li>English</li>
+            <li>French</li>
+            <li>German</li>
+            <li>Russian</li>
+          </ul>
+        </a>
         <a href="https://belvg.com/contact">Contact Us</a>
         <a href="https://belvg.com/about">About Company</a>
       </div>

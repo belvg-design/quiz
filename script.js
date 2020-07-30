@@ -17,8 +17,9 @@ fetch("question.json")
             nextQuestion(current);
             forward.addEventListener("click", goForward);
             back.addEventListener("click", goBack);
-            input.addEventListener("input", checkInput)
-            company.addEventListener("input", checkInput)
+            input.addEventListener("input", checkInput);
+            company.addEventListener("input", checkInput);
+            end.addEventListener("click", ()=>location.reload());
         })
     });
 
