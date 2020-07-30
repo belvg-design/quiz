@@ -1,0 +1,343 @@
+{    
+    "menu": ["English", "French"]
+    "en":{
+        "text": [
+            [
+                "Hi,",
+                "we are belvg design team and we would like to ask you a few questions to help us create the best design option for your project",
+                "Start Survey"
+            ],
+            [
+                "Question",
+                "Type here",
+                "Back",
+                "Next Question",
+                "Your company name"
+            ],
+            [
+                "All Done!",
+                "We've just received your answers and now we are ready to start analyzing them.",
+                "Stay in touch, our manager will provide you with an update upon completion.",
+                "Start New Survey"
+            ],
+            [
+                "Not your Language?",
+                "Contact Us",
+                "About Company"
+            ]
+        ],
+        "questions":[
+            {
+                "quest":"Please, explain your business",
+                "descr":"Tell us more about your company. We need to understand from the very beginning how the project will fit into the existing model."
+            },
+            {
+                "quest":"Your target audience",
+                "descr":"Who will use the site? Please, describe your most preferred customer."
+            },
+            {
+                "quest":"Traffic generation",
+                "descr":"Why do you think people will come to your site?"
+            },
+            {
+                "quest":"Your main feature",
+                "descr":"Does your company have unique features, products? (consumer qualities, range, price, terms of a transaction, warranty and service, geography, or something else)"
+            },
+            {
+                "quest":"Your main goal",
+                "descr":"Please, describe what you intend to receive (customer number database, bring traffic to the site so that more people know about the product or redirects visitors to the main site)"
+            },
+            {
+                "quest":"Optimization",
+                "descr":"Should the website be optimized for a certain resolution or browser and mobile version?"
+            },
+            {
+                "quest":"Your competitors",
+                "descr":"Please provide us with a list of your main competitors."
+            },
+            {
+                "quest":"Your preferences",
+                "descr":"Please show examples of websites that you like."
+            },
+            {
+                "quest":"Deadlines",
+                "descr":"How long do you think the project should take? Describe the roadmap of your project."
+            },
+            {
+                "quest":"Your old website",
+                "descr":"Did you have a website before? Please give your current website address. "
+            },
+            {
+                "quest":"Your brand identity",
+                "descr":"Do you have your own style or design options? Do you have your own logo?"
+            },
+            {
+                "quest":"Content",
+                "descr":"Could you provide content (text, images) or could we create it from scratch? "
+            },
+            {
+                "quest":"Additional services",
+                "descr":"What services should be integrated with the page? (if necessary, online chat or call back. Using these services, you can interact with visitors and sell more. "
+            },
+            {
+                "quest":"Traffic control",
+                "descr":"How do you plan to track page traffic?"
+            }
+        ]
+    },
+    "fr":{
+        "text": [
+            [
+                "Hi,",
+                "we are belvg design team and we would like to ask you a few questions to help us create the best design option for your project",
+                "Start Survey"
+            ],
+            [
+                "Question",
+                "Type here",
+                "Back",
+                "Next Question",
+                "Your company name"
+            ],
+            [
+                "All Done!",
+                "We've just received your answers and now we are ready to start analyzing them.",
+                "Stay in touch, our manager will provide you with an update upon completion.",
+                "Start New Survey"
+            ],
+            [
+                "Not your Language?",
+                "Contact Us",
+                "About Company"
+            ]
+        ],
+        "questions":[
+            {
+                "quest":"Please, explain your business",
+                "descr":"Tell us more about your company. We need to understand from the very beginning how the project will fit into the existing model."
+            },
+            {
+                "quest":"Your target audience",
+                "descr":"Who will use the site? Please, describe your most preferred customer."
+            },
+            {
+                "quest":"Traffic generation",
+                "descr":"Why do you think people will come to your site?"
+            },
+            {
+                "quest":"Your main feature",
+                "descr":"Does your company have unique features, products? (consumer qualities, range, price, terms of a transaction, warranty and service, geography, or something else)"
+            },
+            {
+                "quest":"Your main goal",
+                "descr":"Please, describe what you intend to receive (customer number database, bring traffic to the site so that more people know about the product or redirects visitors to the main site)"
+            },
+            {
+                "quest":"Optimization",
+                "descr":"Should the website be optimized for a certain resolution or browser and mobile version?"
+            },
+            {
+                "quest":"Your competitors",
+                "descr":"Please provide us with a list of your main competitors."
+            },
+            {
+                "quest":"Your preferences",
+                "descr":"Please show examples of websites that you like."
+            },
+            {
+                "quest":"Deadlines",
+                "descr":"How long do you think the project should take? Describe the roadmap of your project."
+            },
+            {
+                "quest":"Your old website",
+                "descr":"Did you have a website before? Please give your current website address. "
+            },
+            {
+                "quest":"Your brand identity",
+                "descr":"Do you have your own style or design options? Do you have your own logo?"
+            },
+            {
+                "quest":"Content",
+                "descr":"Could you provide content (text, images) or could we create it from scratch? "
+            },
+            {
+                "quest":"Additional services",
+                "descr":"What services should be integrated with the page? (if necessary, online chat or call back. Using these services, you can interact with visitors and sell more. "
+            },
+            {
+                "quest":"Traffic control",
+                "descr":"How do you plan to track page traffic?"
+            }
+        ]
+    },
+    "de":{
+        "text": [
+            [
+                "Hi,",
+                "we are belvg design team and we would like to ask you a few questions to help us create the best design option for your project",
+                "Start Survey"
+            ],
+            [
+                "Question",
+                "Type here",
+                "Back",
+                "Next Question",
+                "Your company name"
+            ],
+            [
+                "All Done!",
+                "We've just received your answers and now we are ready to start analyzing them.",
+                "Stay in touch, our manager will provide you with an update upon completion.",
+                "Start New Survey"
+            ],
+            [
+                "Not your Language?",
+                "Contact Us",
+                "About Company"
+            ]
+        ],
+        "questions":[
+            {
+                "quest":"Please, explain your business",
+                "descr":"Tell us more about your company. We need to understand from the very beginning how the project will fit into the existing model."
+            },
+            {
+                "quest":"Your target audience",
+                "descr":"Who will use the site? Please, describe your most preferred customer."
+            },
+            {
+                "quest":"Traffic generation",
+                "descr":"Why do you think people will come to your site?"
+            },
+            {
+                "quest":"Your main feature",
+                "descr":"Does your company have unique features, products? (consumer qualities, range, price, terms of a transaction, warranty and service, geography, or something else)"
+            },
+            {
+                "quest":"Your main goal",
+                "descr":"Please, describe what you intend to receive (customer number database, bring traffic to the site so that more people know about the product or redirects visitors to the main site)"
+            },
+            {
+                "quest":"Optimization",
+                "descr":"Should the website be optimized for a certain resolution or browser and mobile version?"
+            },
+            {
+                "quest":"Your competitors",
+                "descr":"Please provide us with a list of your main competitors."
+            },
+            {
+                "quest":"Your preferences",
+                "descr":"Please show examples of websites that you like."
+            },
+            {
+                "quest":"Deadlines",
+                "descr":"How long do you think the project should take? Describe the roadmap of your project."
+            },
+            {
+                "quest":"Your old website",
+                "descr":"Did you have a website before? Please give your current website address. "
+            },
+            {
+                "quest":"Your brand identity",
+                "descr":"Do you have your own style or design options? Do you have your own logo?"
+            },
+            {
+                "quest":"Content",
+                "descr":"Could you provide content (text, images) or could we create it from scratch? "
+            },
+            {
+                "quest":"Additional services",
+                "descr":"What services should be integrated with the page? (if necessary, online chat or call back. Using these services, you can interact with visitors and sell more. "
+            },
+            {
+                "quest":"Traffic control",
+                "descr":"How do you plan to track page traffic?"
+            }
+        ]
+    },
+    "ru":{
+        "text": [
+            [
+                "Hi,",
+                "we are belvg design team and we would like to ask you a few questions to help us create the best design option for your project",
+                "Start Survey"
+            ],
+            [
+                "Question",
+                "Type here",
+                "Back",
+                "Next Question",
+                "Your company name"
+            ],
+            [
+                "All Done!",
+                "We've just received your answers and now we are ready to start analyzing them.",
+                "Stay in touch, our manager will provide you with an update upon completion.",
+                "Start New Survey"
+            ],
+            [
+                "Not your Language?",
+                "Contact Us",
+                "About Company"
+            ]
+        ],
+        "questions":[
+            {
+                "quest":"Please, explain your business",
+                "descr":"Tell us more about your company. We need to understand from the very beginning how the project will fit into the existing model."
+            },
+            {
+                "quest":"Your target audience",
+                "descr":"Who will use the site? Please, describe your most preferred customer."
+            },
+            {
+                "quest":"Traffic generation",
+                "descr":"Why do you think people will come to your site?"
+            },
+            {
+                "quest":"Your main feature",
+                "descr":"Does your company have unique features, products? (consumer qualities, range, price, terms of a transaction, warranty and service, geography, or something else)"
+            },
+            {
+                "quest":"Your main goal",
+                "descr":"Please, describe what you intend to receive (customer number database, bring traffic to the site so that more people know about the product or redirects visitors to the main site)"
+            },
+            {
+                "quest":"Optimization",
+                "descr":"Should the website be optimized for a certain resolution or browser and mobile version?"
+            },
+            {
+                "quest":"Your competitors",
+                "descr":"Please provide us with a list of your main competitors."
+            },
+            {
+                "quest":"Your preferences",
+                "descr":"Please show examples of websites that you like."
+            },
+            {
+                "quest":"Deadlines",
+                "descr":"How long do you think the project should take? Describe the roadmap of your project."
+            },
+            {
+                "quest":"Your old website",
+                "descr":"Did you have a website before? Please give your current website address. "
+            },
+            {
+                "quest":"Your brand identity",
+                "descr":"Do you have your own style or design options? Do you have your own logo?"
+            },
+            {
+                "quest":"Content",
+                "descr":"Could you provide content (text, images) or could we create it from scratch? "
+            },
+            {
+                "quest":"Additional services",
+                "descr":"What services should be integrated with the page? (if necessary, online chat or call back. Using these services, you can interact with visitors and sell more. "
+            },
+            {
+                "quest":"Traffic control",
+                "descr":"How do you plan to track page traffic?"
+            }
+        ]
+    }
+}
