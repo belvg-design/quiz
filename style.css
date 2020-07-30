@@ -3,6 +3,7 @@
 *{
   margin: 0;
   font-family: Roboto;
+  font-style: normal;
 }
 
 @keyframes blink {  
@@ -33,6 +34,7 @@ main{
   display: flex;
   flex-direction: column;
 }
+
 div.shadow{
   position: absolute;
   z-index: -1;
@@ -43,20 +45,10 @@ div.shadow{
   box-shadow: 0px 4px 200px rgba(0, 0, 0, 0.14);
   border-radius: 14px;
 }
-body > img{
-  position: absolute;
-  bottom: 7vh;
-  align-self: center;
-}
 
 footer{
   position: absolute;
   bottom: 0;
-}
-
-h1 {
-  font-style: italic;
-  color: #373fff;
 }
 
 .button{
@@ -67,14 +59,13 @@ h1 {
   width: 250px;
   height: 50px;
   box-sizing: border-box;
-  font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 150%;
   color: #FFFFFF;
+  margin-top: 50px;
   outline: none;
   cursor: pointer;
-  margin-top: 50px;
 }
 .button[class*=outline]{
   border: 1px solid #FF3366;
@@ -84,30 +75,31 @@ h1 {
 
 .start{
   display: flex;
+}
+.end, .question{
+  display: none;
+}
+
+.start, .end{
   flex-direction: row;
   justify-content: space-between;
 }
-.start > img{
+.start > img, .end > img{
   width: 520px;
   padding: 100px 0 100px 75px;
 }
-
-.start > div{
+.start > div, .end > div{
   padding: 170px 75px 140px 85px;
   display: flex;
   flex-direction: column;
 }
-
-.start > div > span{
-  font-style: normal;
+.start > div > span, .end > div > span{
   font-weight: bold;
   font-size: 48px;
   line-height: 130%;
   color: #000000;
 }
-
 .start > div > p, .end > div > p{
-  font-style: normal;
   font-weight: 300;
   font-size: 22px;
   line-height: 150%;
@@ -115,8 +107,20 @@ h1 {
   margin-top: 25px;
 }
 
+.end > img{
+  padding: 95px 95px 95px 0;
+}
+.end > div{
+  padding: 140px 0 115px 95px;
+  width: 420px;
+}
+.end > div > p.description{
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 34px;
+}
+
 .question{
-  display:none;
   flex-direction: column;
   padding: 71px 0;
   width: 670px;
@@ -124,7 +128,6 @@ h1 {
 }
 
 #questionNumber{
-  font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 150%;
@@ -133,7 +136,6 @@ h1 {
 }
 
 #question{
-  font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 130%;
@@ -143,7 +145,6 @@ h1 {
 }
 
 #description{
-  font-style: normal;
   font-weight: 300;
   font-size: 22px;
   line-height: 150%;
@@ -152,9 +153,7 @@ h1 {
   margin-top: 35px;
 }
 
-.label{
-  font-family: Roboto;
-  font-style: normal;
+.label, .label span{
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
@@ -164,9 +163,6 @@ h1 {
   margin-top: 64px;
 }
 .label > span{
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 150%;
   display: flex;
   align-items: center;
   color: #FF3366;
@@ -186,63 +182,4 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-#back{
-}
-
-#forward{
-  border: none;
-  background: #FF3366;
-  color: white;
-}
-
-.end{
-  display: none;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.end > img{
-  width: 520px;
-  padding: 95px 95px 95px 0;
-}
-
-.end > div{
-  display: flex;
-  flex-direction: column;
-  padding: 140px 0 115px 95px;
-  width: 420px;
-}
-
-.end > div > span{
-  color: #000000;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 130%;
-}
-
-.end > div > p.description{
-  font-weight: 500;
-  font-size: 16px;
-  margin-top: 34px;
-}
-
-.end > div > button {
-  background: #FF3366;
-  border-radius: 50px;
-  border: none;
-  align-items: flex-start;
-  width: 250px;
-  height: 50px;
-  box-sizing: border-box;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 150%;
-  color: #FFFFFF;
-  padding: 0.65vw;
-  outline: none;
-  cursor: pointer;
-  margin-top: 40px;
 }
