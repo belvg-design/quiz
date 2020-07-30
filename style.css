@@ -20,7 +20,6 @@ body {
   display: flex;
   flex-direction: column;
   background: #F9F9F9;
-  justify-content: center;
   height: 100vh;
 }
 
@@ -29,6 +28,7 @@ main{
   border-radius: 14px;
   width: 1210px;
   align-self: center;
+  margin-top: 50px;
   box-sizing: border-box;
   min-height: 20vw;
   display: flex;
@@ -36,6 +36,7 @@ main{
 }
 
 div.shadow{
+  display: none;
   position: absolute;
   z-index: -1;
   width: 50vw;
@@ -47,8 +48,21 @@ div.shadow{
 }
 
 footer{
-  position: absolute;
-  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: 1210px;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-bottom: 25px;
+  align-items: center;
+}
+footer > div > a {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 135%;
+  color: #666666;
+  padding-right: 30px;
 }
 
 .button{
