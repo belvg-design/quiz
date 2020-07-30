@@ -63,13 +63,20 @@ footer > div > a {
   font-weight: 300;
   font-size: 16px;
   line-height: 135%;
-  color: #666;
+  color: #888;
   padding-right: 30px;
   text-decoration: none;
   transition-duration: 0.2s;
 }
 footer > div > a:hover {
-  color: #444;
+  color: #333;
+}
+footer > a > img{
+  opacity: 0.5;
+  transition-duration: 0.2s;
+}
+footer > a > img:hover{
+  opacity: 1;
 }
 
 .button{
