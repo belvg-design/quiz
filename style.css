@@ -63,8 +63,13 @@ footer > div > a {
   font-weight: 300;
   font-size: 16px;
   line-height: 135%;
-  color: #666666;
+  color: #666;
   padding-right: 30px;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+footer > div > a:hover {
+  color: #444;
 }
 
 .button{
@@ -82,6 +87,7 @@ footer > div > a {
   margin-top: 50px;
   outline: none;
   cursor: pointer;
+  transition-duration: 0.2s;
 }
 .button[class*=outline]{
   border: 1px solid #FF3366;
@@ -186,7 +192,7 @@ footer > div > a {
   color: #FF3366;
 }
 
-#input{
+#input {
   background: #FFFFFF;
   border: 1px solid #CCCCCC;
   box-sizing: border-box;
@@ -194,6 +200,13 @@ footer > div > a {
   resize: none;
   height: 138px;
   margin-top: 10px;
+  outline: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  padding: 13px 10px;
 }
 #input:focus{
   box-shadow: 0 0 4px #f36;
