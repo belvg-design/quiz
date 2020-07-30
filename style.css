@@ -105,15 +105,96 @@ h1 {
 
 .question{
   flex-direction: column;
-  padding: 2vw 5vw;
+  padding: 71px 5vw;
 }
 
 #questionNumber{
-  
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 150%;
   text-align: center;
   color: #999999;
+}
+
+#question{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
+  margin-top: 13px;
+}
+
+#description{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 150%;
+  text-align: center;
+  color: #666666;
+  margin-top: 35px;
+}
+
+.label{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin-top: 64px;
+}
+.label > span{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #FF3366;
+}
+
+#input{
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: 6px;
+  resize: none;
+  height: 138px;
+  margin-top: 10px;
+}
+
+.buttons{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buttons > button{
+  box-sizing: border-box;
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #FF3366;
+  background: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FF3366;
+  outline: none;
+  cursor:pointer;
+}
+
+#back{
+}
+
+#forward{
+  border: none;
+  background: #FF3366;
+  color: white;
 }
