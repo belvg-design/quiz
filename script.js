@@ -15,8 +15,9 @@ fetch("question.json")
             sectionStart.style.setProperty("display", "none");
             sectionQuestion.style.setProperty("display", "flex");
             nextQuestion(current);
-            forward.addEventListener("click",goForward);
-            back.addEventListener("click",goBack);
+            forward.addEventListener("click", goForward);
+            back.addEventListener("click", goBack);
+            input.addEventListener("input", checkInput)
         })
     });
 
@@ -27,6 +28,7 @@ function nextQuestion(number){
     input.value = answers[number]?answers[number]: "";
 }
 function goForward(e){
+    if(!checkInput({target:input});
     if((current + 1)==questions.length){
         sectionQuestion.style.setProperty("display", "none");
         sectionEnd.style.setProperty("display", "flex");
@@ -37,7 +39,7 @@ function goForward(e){
     nextQuestion(current);
 }
 function goBack(e){
-    if(current==0){
+    if(!checkInput({target:input}) || current==0){
         return;
     }
     answers[current] = input.value;
@@ -45,7 +47,16 @@ function goBack(e){
     nextQuestion(current);
 }
 function checkInput(e){
-    if(e.target.value.trim() == "")
+    if(input.value.trim() == ""){
+        back.disabled = true;
+        forward.disabled = true;
+        return false;
+    }else{
+        back.disabled = false;
+        forward.disabled = false;
+        return true;
+    }
+    console.log("input", `"${input.value.trim()}"`,input.value.trim()=="");
 }
 
 

@@ -107,6 +107,9 @@ footer > a > img:hover{
 .button[class*=outline]:hover{  
   background: none;
 }
+.button:disabled{
+  opacity: 0.1;
+}
 
 .start{
   display: flex;
