@@ -2,10 +2,11 @@ let start = document.querySelector("#start"),
     sectionStart = document.querySelector("#sectionStart"),
     sectionQuestion = document.querySelector("#sectionQuestion"),
     sectionEnd = document.querySelector("#sectionEnd"),
-    langChanger = document.querySelector("#langChanger");
+    langChanger = document.querySelector("#langChanger"),
+    langChanger = document.querySelector("#language");
 
 let system,
-    lang
+    lang,
     questions,
     answers = [],
     current = 0;
@@ -14,7 +15,9 @@ fetch("system.json")
     .then(response => response.json())
     .then(json =>{
         system = json;
-        setLang(system.default);
+        lang = system.default;
+        setLang(lang);
+        compositeLangs(system.lang, lang);
         start.addEventListener("click",(e)=>{
             sectionStart.style.setProperty("display", "none");
             sectionQuestion.style.setProperty("display", "flex");
@@ -37,14 +40,26 @@ function openLang(e){
 function closeLang(e){
     language.classList.add("hidden");
 }
-function compositeLangs(lang, default){
-
+function compositeLangs(langData, defaultLang){
+    for(let key of Object.keys(langData)){
+        let li = document.createElement("li");
+        li.innerText = langData[key];
+        li.addEventListener("click",(e)=>{
+            language.querySelector(".current").classList.remove("current");
+            setlang(key);
+            e.target.classList.add("current");
+        })
+        if(key == defaultLang) li.classList.add("current");
+        language.appendChild(li);
+    }
 }
 
 function setLang(lang){
     if(!system.lang[lang]) lang = system.default;
     questions = system[lang].questions;
     text = system[lang].text;
+
+    refreshLang();
 }
 function refreshLang(){
     for(let s=0; s<text.length; s++){
