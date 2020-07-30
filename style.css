@@ -198,3 +198,69 @@ h1 {
   background: #FF3366;
   color: white;
 }
+
+.end{
+  display: none;
+  flex-direction: row;
+  padding: 3vw 3vw;
+  justify-content: space-between;
+}
+.end > img{
+  
+  width: 45%;
+  padding-right: 0;
+}
+
+.end > div{
+  
+  width: 45%;
+  /* margin-top: 5vw; */
+  padding: 1vw 0;
+  padding-right: 3.4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.end > div > span{
+  font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.9vw;
+    line-height: 130%;
+    color: #000000;
+}
+
+.end > div > p{
+  font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8vw;
+    line-height: 150%;
+    color: #666666;
+}
+
+.end > div > p.description{
+  font-weight: 500;
+  font-size: 0.6vw;
+  line-height: 150%;
+  color: #666666;
+}
+
+.end > div > button {
+  background: #FF3366;
+    border-radius: 100vw;
+    border: none;
+    align-items: flex-start;
+    width: 10vw;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.7vw;
+    line-height: 100%;
+    color: #FFFFFF;
+    padding: 0.65vw;
+    outline: none;
+    cursor: pointer;
+}
