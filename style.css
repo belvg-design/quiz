@@ -26,11 +26,13 @@ body {
 main{
   background: #FFFFFF;
   border-radius: 14px;
-  width: 50vw;
+  width: 1210px;
   /* height: 50vh; */
   align-self: center;
   box-sizing: border-box;
   min-height: 20vw;
+  display: flex;
+  flex-direction: column;v
 }
 div.shadow{
   position: absolute;
@@ -60,57 +62,54 @@ h1 {
 .start{
   display: flex;
   flex-direction: row;
-  padding: 4vw 2vw;
+  justify-content: space-between;
 }
 .start > img{
-  width: 45%;
-  padding-left: 2%;
+  width: 520px;
+  padding: 100px 0 100px 75px;
 }
 
 .start > div{
-  width: 45%;
-    /* margin-top: 5vw; */
-    padding: 2vw 0;
-    padding-left: 3.4vw;
-    display: flex;
-    flex-direction: column;
-  justify-content: space-around;
+  padding: 170px 75px 140px 85px;
+  display: flex;
+  flex-direction: column;
 }
 
 .start > div > span{
-  font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.9vw;
-    line-height: 130%;
-    color: #000000;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 130%;
+  color: #000000;
 }
 
 .start > div > p{
-  font-family: Roboto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 0.8vw;
-    line-height: 150%;
-    color: #666666;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 150%;
+  color: #666666;
+  margin-top: 25px;
 }
 
 .start > div > button {
   background: #FF3366;
-    border-radius: 100vw;
-    border: none;
-    align-items: flex-start;
-    width: 10vw;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 0.7vw;
-    line-height: 100%;
-    color: #FFFFFF;
-    padding: 0.65vw;
-    outline: none;
-    cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  align-items: flex-start;
+  width: 250px;
+  height: 50px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+  padding: 0.65vw;
+  outline: none;
+  cursor: pointer;
+  margin-top: 40px;
 }
 
 .question{
