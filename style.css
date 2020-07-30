@@ -15,12 +15,12 @@ body {
 
 main{
   background: #FFFFFF;
-  border-radius: 6px;
-  width: 70vw;
-  /* height: 50vh; */
-  align-self: center;
-  padding: 5vw;
-  box-sizing: border-box;
+    border-radius: 14px;
+    width: 50vw;
+    /* height: 50vh; */
+    align-self: center;
+    padding: 4vw 2vw;
+    box-sizing: border-box;
 }
 div.shadow{
   position: absolute;
@@ -34,7 +34,7 @@ div.shadow{
 }
 body > img{
   position: absolute;
-  bottom: 10vh;
+  bottom: 7vh;
   align-self: center;
 }
 
@@ -58,6 +58,7 @@ h1 {
 
 .start > div{
   
+    width: 50%;
     /* margin-top: 5vw; */
     padding: 2vw 0;
     padding-left: 5vw;
