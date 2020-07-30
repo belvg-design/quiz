@@ -40,7 +40,7 @@ function nextQuestion(number){
         companyLabel.classList.add("none");
         forward.innerText = "Next Question";
     }
-    input.focus();
+    checkInput();
 
 }
 function goForward(e){
@@ -64,20 +64,17 @@ function goBack(e){
 }
 function checkInput(e){
     if(input.value.trim() == "" ){
-        back.disabled = true;
         forward.disabled = true;
         if(e)e.target.focus();
         else input.focus();
         return false;
     }
     if(current == questions.length-1 && company.value.trim() == ""){
-        back.disabled = true;
         forward.disabled = true;
         if(e)e.target.focus();
-        else input.focus();
+        else company.focus();
         return false;
     }
-    back.disabled = false;
     forward.disabled = false;
     return true;
     //console.log("input", `"${input.value.trim()}"`,input.value.trim()=="");
