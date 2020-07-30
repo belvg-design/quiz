@@ -24,6 +24,7 @@ fetch("question.json")
                 answers[current] = input.value;
                 current++;
                 nextQuestion(current);
+                sectionQuestion.style.setProperty("animation", )
             })
             back.addEventListener("click",(e)=>{
                 if(current==0){
