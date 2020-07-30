@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   background: #F9F9F9;
-  height: 100vh;
+  position
 }
 
 main{
@@ -47,9 +47,9 @@ div.shadow{
   border-radius: 14px;
 }
 
-footer{
+footer {
   position: absolute;
-  top: calc(max(100%, 100vh) - 100px);
+  top: max(100%, calc(100vh - 100px));
   display: flex;
   flex-direction: row;
   align-self: center;
@@ -57,7 +57,7 @@ footer{
   justify-content: space-between;
   height: 100px;
   align-items: center;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 footer > div > a {
   font-weight: 300;
