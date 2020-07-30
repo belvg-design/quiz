@@ -30,6 +30,13 @@ function setLang(lang){
     questions = system[lang].questions;
     text = system[lang].text;
 }
+function refreshLang(){
+    for(let s=0; s<text.length; s++){
+        for(let p=0; p<text[s].length; p++){
+            document.querySelector(`.s${s}p${p}`).innerText = text[s][p];
+        }
+    }
+}
 
 function nextQuestion(number){
     questionNumber.innerText = `Question ${number+1}/${questions.length}`;
