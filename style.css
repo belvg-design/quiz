@@ -115,6 +115,9 @@ footer > a > img:hover{
   visibility: hidden;
   opacity: 0;
 }
+.none{
+  display: none!important;
+}
 
 .start{
   display: flex;
@@ -206,8 +209,11 @@ footer > a > img:hover{
 .label > span{
   color: #FF3366;
 }
+textarea ~ .label {
+  margin-top: 25px;
+}
 
-#input {
+#input, #company{
   background: #FFFFFF;
   border: 1px solid #CCCCCC;
   box-sizing: border-box;
@@ -223,9 +229,12 @@ footer > a > img:hover{
   align-items: center;
   padding: 13px 10px;
 }
-#input:focus{
+#input:focus, #company:focus{
   box-shadow: 0 0 4px #f36;
   border-color: #f36;
+}
+#company{
+  height: 50px;
 }
 
 .buttons{

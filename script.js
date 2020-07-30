@@ -27,11 +27,15 @@ function nextQuestion(number){
     description.innerText = questions[number].descr;
     input.value = answers[number]?answers[number]: "";
     if(number == 0){
-        back.classList.toggle("hidden");
+        back.classList.add("hidden");
     }else 
-        back.classList.toggle("hidden");
+        back.classList.remove("hidden");
     if(number == questions.length-1){
-        
+        company.classList.remove("none");
+        companyLabel.classList.remove("none");
+    }else{
+        company.classList.add("none");
+        companyLabel.classList.add("none");
     }
 
 }
@@ -55,7 +59,7 @@ function goBack(e){
     nextQuestion(current);
 }
 function checkInput(e){
-    if(input.value.trim() == ""){
+    if(input.value.trim() == "" &&((current==))){
         back.disabled = true;
         forward.disabled = true;
         return false;
