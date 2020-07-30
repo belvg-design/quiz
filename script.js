@@ -26,9 +26,17 @@ function nextQuestion(number){
     question.innerText = questions[number].quest;
     description.innerText = questions[number].descr;
     input.value = answers[number]?answers[number]: "";
+    if(number == 0){
+        back.classList.toggle("hidden");
+    }else 
+        back.classList.toggle("hidden");
+    if(number == questions.length-1){
+        
+    }
+
 }
 function goForward(e){
-    if(!checkInput({target:input});
+    if(!checkInput({target:input})) return;
     if((current + 1)==questions.length){
         sectionQuestion.style.setProperty("display", "none");
         sectionEnd.style.setProperty("display", "flex");

@@ -111,6 +111,11 @@ footer > a > img:hover{
   opacity: 0.1;
 }
 
+.hidden{
+  visibility: hidden;
+  opacity: 0;
+}
+
 .start{
   display: flex;
 }
