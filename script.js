@@ -5,6 +5,7 @@ let start = document.querySelector("#start"),
     langChanger = document.querySelector("#langChanger");
 
 let system,
+    lang
     questions,
     answers = [],
     current = 0;
@@ -18,18 +19,26 @@ fetch("system.json")
             sectionStart.style.setProperty("display", "none");
             sectionQuestion.style.setProperty("display", "flex");
             nextQuestion(current);
-            forward.addEventListener("click", goForward);
-            back.addEventListener("click", goBack);
-            input.addEventListener("input", checkInput);
-            company.addEventListener("input", checkInput);
-            end.addEventListener("click", ()=>location.reload());
-            langChanger.onclick = openLang;
         })
+        forward.addEventListener("click", goForward);
+        back.addEventListener("click", goBack);
+        input.addEventListener("input", checkInput);
+        company.addEventListener("input", checkInput);
+        end.addEventListener("click", ()=>location.reload());
+        langChanger.addEventListener("click", openLang);
+        window.addEventListener("click", closeLang);
     });
 
 function openLang(e){
-    console.log("kek");
     language.classList.remove("hidden");
+    if(e.target == langChanger)
+        e.stopPropagation();
+}
+function closeLang(e){
+    language.classList.add("hidden");
+}
+function compositeLangs(lang, default){
+
 }
 
 function setLang(lang){
