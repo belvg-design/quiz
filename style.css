@@ -48,14 +48,16 @@ div.shadow{
 }
 
 footer{
+  position: absolute;
+  top: calc(max(100%, 100vh) - 100px);
   display: flex;
   flex-direction: row;
   align-self: center;
   width: 1210px;
   justify-content: space-between;
-  margin-top: 50px;
-  padding-bottom: 25px;
+  height: 100px;
   align-items: center;
+  box-sizing: border-box
 }
 footer > div > a {
   font-weight: 300;
@@ -85,6 +87,12 @@ footer > div > a {
   border: 1px solid #FF3366;
   background: none;
   color: #FF3366;
+}
+.button:hover{  
+  background: #D92B57;
+}
+.button[class*=outline]:hover{  
+  background: none;
 }
 
 .start{
@@ -171,14 +179,10 @@ footer > div > a {
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
-  display: flex;
-  align-items: center;
   color: #000000;
   margin-top: 64px;
 }
 .label > span{
-  display: flex;
-  align-items: center;
   color: #FF3366;
 }
 
@@ -190,6 +194,10 @@ footer > div > a {
   resize: none;
   height: 138px;
   margin-top: 10px;
+}
+#input:focus{
+  box-shadow: 0 0 4px #f36;
+  border-color: #f36;
 }
 
 .buttons{
