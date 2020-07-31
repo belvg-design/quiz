@@ -1,5 +1,5 @@
 {    
-    "lang": {"en":"English", "fr":"French", "de":"German", "ru":"Russian"},
+    "lang": {"en":"English", "fr":"Français", "de":"Deutsch", "ru":"Русский"},
     "default":"en",
     "en":{
         "text": [

@@ -253,11 +253,11 @@ footer > div > a:first-child{
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
-  color: #000000;
+  color: #FF3366;
   margin-top: 64px;
 }
 .label > span{
-  color: #FF3366;
+  color: #000000;
 }
 textarea ~ .label {
   margin-top: 25px;

@@ -47,8 +47,9 @@ function compositeLangs(langData, defaultLang){
         li.addEventListener("click",(e)=>{
             language.querySelector(".current").classList.remove("current");
             setLang(key);
+            refreshLang();
+            nextQuestion(current);
             e.target.classList.add("current");
-            e.stopPropagation();
         })
         if(key == defaultLang) li.classList.add("current");
         language.appendChild(li);
@@ -59,9 +60,6 @@ function setLang(lang){
     if(!system.lang[lang]) lang = system.default;
     questions = system[lang].questions;
     text = system[lang].text;
-
-    refreshLang();
-    nextQuestion(current);
 }
 function refreshLang(){
     for(let s=0; s<text.length; s++){
