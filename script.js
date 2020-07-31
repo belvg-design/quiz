@@ -64,7 +64,9 @@ function setLang(lang){
 function refreshLang(){
     for(let s=0; s<text.length; s++){
         for(let p=0; p<text[s].length; p++){
-            document.querySelector(`.s${s}p${p}`).innerText = text[s][p];
+            if(typetext[s][p]){
+                document.querySelector(`.s${s}p${p}`).innerText = text[s][p];
+            }
         }
     }
 }
@@ -81,11 +83,11 @@ function nextQuestion(number){
     if(number == questions.length-1){
         company.classList.remove("none");
         companyLabel.classList.remove("none");
-        forward.innerText = "Submit";
+        forward.innerText = text[1][5].hidden;
     }else{
         company.classList.add("none");
         companyLabel.classList.add("none");
-        forward.innerText = "Next Question";
+        forward.innerText = text[1][3];
     }
     checkInput();
 

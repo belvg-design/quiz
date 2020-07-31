@@ -13,7 +13,8 @@
                 "Type here",
                 "Back",
                 "Next Question",
-                "Your company name"
+                "Your company name",
+                "Submit"
             ],
             [
                 "All Done!",
@@ -98,7 +99,8 @@
                 "Tapez ici",
                 "Arrière",
                 "Prochain",
-                "Le nom de votre société"
+                "Le nom de votre société",
+                "Envoyer"
             ],
             [
                 "Toutes Les Faire!",
@@ -183,7 +185,8 @@
                 "Hier eingeben",
                 "Zurück",
                 "Nächste Frage",
-                "Ihr Firmenname"
+                "Ihr Firmenname",
+                "Verzenden"
             ],
             [
                 "Alles erledigt!",
@@ -268,7 +271,8 @@
                 "Введите здесь",
                 "Назад",
                 "Следующий вопрос",
-                "Название вашей компании"
+                "Название вашей компании",
+                {"hidden":"Отправить"}
             ],
             [
                 "Все готово!",
