@@ -67,7 +67,7 @@
             },
             {
                 "quest":"Your old website",
-                "descr":"Did you have a website before? Please give your current website address. "
+                "descr":"Did you have a website before? Please give your current website address."
             },
             {
                 "quest":"Your brand identity",
@@ -106,7 +106,7 @@
                 "Toutes Les Faire!",
                 "Nous venons de recevoir vos réponses et maintenant nous sommes prêts à commencer l'analyse.",
                 "Restez en contact, notre gestionnaire vous fournira une mise à jour à la fin.",
-                "Commencer Une Nouvelle Enquête"
+                "Nouvelle Enquête"
             ],
             [
                 "Français",
@@ -176,8 +176,8 @@
     "de":{
         "text": [
             [
-                "Guten Tag,",
-                "wir sind ein starkes Designteam und möchten Ihnen einige Fragen stellen, damit wir die beste Designoption für Ihr Projekt finden können",
+                "Hi,",
+                "wir sind BelVG design team und möchten Ihnen ein paar Fragen stellen, um uns die beste design option für Ihr Projekt zu erstellen",
                 "Umfrage starten"
             ],
             [
@@ -275,8 +275,8 @@
                 {"hidden":"Отправить"}
             ],
             [
-                "Все готово!",
-                "Мы только что получили ваши ответы, и теперь готовы начать их анализ.",
+                "Отлично!",
+                "Мы только что получили ваши ответы, и готовы начать их анализ.",
                 "Оставайтесь на связи, наш менеджер бедет держать вас в курсе.",
                 "Начать новый опрос"
             ],
@@ -288,7 +288,7 @@
         ],
         "questions":[
             {
-                "quest":"Пожалуйста, объясните как работает ваш бизнес",
+                "quest":"Объясните как работает ваш бизнес",
                 "descr":"Расскажите нам больше о вашей компании. Нам нужно с самого начала понять, как проект будет вписываться в существующую бизнес модель."
             },
             {
@@ -301,11 +301,11 @@
             },
             {
                 "quest":"То что отличает вас от других",
-                "descr":"Есть ли у вашей компании уникальные предложения, продукты? (гарантии качества, ассортимент, цена, условия сделки, гарантия и обслуживание, география доставки или что-то еще)"
+                "descr":"Есть ли у вашей компании уникальные предложения, продукты? (гарантии качества, ассортимент, цена, условия сделки, гарантия и обслуживание, география доставки или что-то еще)."
             },
             {
                 "quest":"Ваша главная цель",
-                "descr":"Пожалуйста, опишите, что вы намереваетесь получить (база данных номеров клиентов, привлечь трафик на сайт, чтобы больше людей узнали о продукте либо перенаправть посетителей на основной сайт)"
+                "descr":"Пожалуйста, опишите, что вы намереваетесь получить (база данных номеров клиентов, привлечь трафик на сайт, чтобы больше людей узнали о продукте либо перенаправть посетителей на основной сайт)."
             },
             {
                 "quest":"Оптимизация",

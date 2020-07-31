@@ -5,6 +5,8 @@ let start = document.querySelector("#start"),
     langChanger = document.querySelector("#langChanger"),
     language = document.querySelector("#language");
 
+const key = "https://formspree.io/mbjzwlpg";
+
 let system,
     lang,
     questions,
@@ -19,9 +21,17 @@ fetch("system.json")
         setLang(lang);
         compositeLangs(system.lang, lang);
         start.addEventListener("click",(e)=>{
-            sectionStart.style.setProperty("display", "none");
-            sectionQuestion.style.setProperty("display", "flex");
-            nextQuestion(current);
+            sectionStart.style.setProperty("animation", "1s 1 normal blink");
+            sectionQuestion.style.setProperty("animation", "0.5s 1 normal blinkOut");
+            setTimeout(()=>{
+                sectionStart.style.setProperty("animation", "none");
+                sectionQuestion.style.setProperty("animation", "none");
+            }, 1000)
+            setTimeout(()=>{
+                sectionQuestion.style.setProperty("display", "flex");
+                sectionStart.style.setProperty("display", "none");
+                nextQuestion(current);
+            }, 500)
         })
         forward.addEventListener("click", goForward);
         back.addEventListener("click", goBack);
@@ -70,6 +80,9 @@ function refreshLang(){
         }
     }
 }
+function receive(){
+    let 
+}
 
 function nextQuestion(number){
     questionNumber.children[1].innerText = ` ${number+1}/${questions.length}`;
@@ -95,8 +108,16 @@ function nextQuestion(number){
 function goForward(e){
     if(!checkInput()) return;
     if((current + 1)==questions.length){
-        sectionQuestion.style.setProperty("display", "none");
-        sectionEnd.style.setProperty("display", "flex");
+        sectionQuestion.style.setProperty("animation", "1s 1 normal blink");
+        sectionEnd.style.setProperty("animation", "0.5s 1 normal blinkOut");
+        setTimeout(()=>{
+            sectionQuestion.style.setProperty("animation", "none");
+            sectionEnd.style.setProperty("animation", "none");
+        }, 1000)
+        setTimeout(()=>{
+            sectionEnd.style.setProperty("display", "flex");
+            sectionQuestion.style.setProperty("display", "none");
+        }, 500)
         return;
     }
     sectionQuestion.style.setProperty("animation", "1s 1 normal blink");
@@ -104,18 +125,24 @@ function goForward(e){
         sectionQuestion.style.setProperty("animation", "none");
     }, 1000)
     setTimeout(()=>{
+        answers[current] = input.value;
+        current++;
+        nextQuestion(current);
     }, 500)
-    answers[current] = input.value;
-    current++;
-    nextQuestion(current);
 }
 function goBack(e){
     if(current==0){
         return;
     }
-    answers[current] = input.value;
-    current--;
-    nextQuestion(current);
+    sectionQuestion.style.setProperty("animation", "1s 1 normal blink");
+    setTimeout(()=>{
+        sectionQuestion.style.setProperty("animation", "none");
+    }, 1000)
+    setTimeout(()=>{
+        answers[current] = input.value;
+        current--;
+        nextQuestion(current);
+    }, 500)
 }
 function checkInput(e){
     if(input.value.trim() == "" ){
@@ -135,7 +162,7 @@ function checkInput(e){
     //console.log("input", `"${input.value.trim()}"`,input.value.trim()=="");
 }
 
-for(let i of document.querySelectorAll("img")) i.setAttribute("draggable","false");
+for(let i of document.querySelectorAll("img"))i.setAttribute("draggable","false");
 
 //Effects
 /*
