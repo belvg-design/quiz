@@ -31,6 +31,7 @@
     --main-container-width: 1210px;
     --button-width: 250px;
     --button-margin-top: 50px;
+    --button-height: 50px;
     /*fonts*/
     --article-headline: 48px;
     --question: 30px;
@@ -91,6 +92,7 @@
     --main-container-width: calc(100% - 32px);
     --button-width: 100%;
     --button-margin-top: 25px;
+    --button-height: 40px;
     /*fonts*/
     --article-headline: 26px;
     --question: 26px;
@@ -135,6 +137,9 @@
     flex-direction: column;
     width: 100%;
   }
+  .start > div{
+    padding-top:0;
+  }
   .start > div > span, .end > div > span{
     font-weight: bold;
     font-size: var(--article-headline);
@@ -146,7 +151,7 @@
     font-size: var(--article-p);
     line-height: 150%;
     color: #666666;
-    margin-top: 25px;
+    margin-top: 15px;
   }
 }
 
@@ -265,7 +270,7 @@ footer > div > a:first-child{
   border: none;
   align-items: flex-start;
   width: var(--button-width);
-  height: 50px;
+  height: var(--button-height);
   box-sizing: border-box;
   font-weight: 300;
   font-size: var(--button);
@@ -306,6 +311,25 @@ footer > div > a:first-child{
   display: none;
 }
 
+.start, .end{
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.start > img, .end > img{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px 20px;
+}
+.start > div, .end > div{
+  box-sizing: border-box;
+  padding: 25px 20px;
+  width: 100%;
+}
+.start > div{
+  padding-top:0;
+}
+
 .end > img{
   padding: 95px 95px 95px 0;
 }
@@ -316,7 +340,7 @@ footer > div > a:first-child{
 .end > div > p.description{
   font-weight: 500;
   font-size: var(--article-p-description);
-  margin-top: 34px;
+  margin-top: var(--art);
 }
 
 .question{
@@ -394,4 +418,59 @@ textarea ~ .label {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+
+
+.start, .end{
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.start > img, .end > img{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px 20px;
+}
+.start > div, .end > div{
+  box-sizing: border-box;
+  padding: 25px 20px;
+  width: 100%;
+}
+.start > div{
+  padding-top:0;
+}
+
+/* second */
+
+.start, .end{
+  flex-direction: row;
+  justify-content: space-between;
+}
+.start > img, .end > img{
+  width: 520px;
+  padding: 100px 0 100px 75px;
+}
+.start > div, .end > div{
+  padding: 140px 75px 100px 85px;
+  width: 520px;
+}
+
+/*similar*/
+.start > div, .end > div{
+  display: flex;
+  flex-direction: column;
+}
+.start > div > span, .end > div > span{
+  font-weight: bold;
+  font-size: var(--article-headline);
+  line-height: 130%;
+  color: #000000;
+}
+.start > div > p, .end > div > p{
+  font-weight: 300;
+  font-size: var(--article-p);
+  line-height: 150%;
+  color: #666666;
+  margin-top: var(--article-p-margin-top);
 }
