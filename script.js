@@ -191,4 +191,4 @@ function checkInput(e){
 }
 
 for(let i of document.querySelectorAll("img"))i.setAttribute("draggable","false");
-window.addEventListener("error",(e)=>{ alert(e); });
+window.addEventListener("error", (e)=>{ alert(e.message);});
