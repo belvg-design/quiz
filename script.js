@@ -64,7 +64,7 @@ function setLang(lang){
 function refreshLang(){
     for(let s=0; s<text.length; s++){
         for(let p=0; p<text[s].length; p++){
-            if(typetext[s][p]){
+            if(typeof(text[s][p]) == "string"){
                 document.querySelector(`.s${s}p${p}`).innerText = text[s][p];
             }
         }

@@ -14,7 +14,7 @@
                 "Back",
                 "Next Question",
                 "Your company name",
-                "Submit"
+                {"hidden":"Submit"}
             ],
             [
                 "All Done!",
@@ -23,7 +23,7 @@
                 "Start New Survey"
             ],
             [
-                "Not your Language?",
+                "English",
                 "Contact Us",
                 "About Company"
             ]
@@ -100,7 +100,7 @@
                 "Arrière",
                 "Prochain",
                 "Le nom de votre société",
-                "Envoyer"
+                {"hidden":"Envoyer"}
             ],
             [
                 "Toutes Les Faire!",
@@ -109,7 +109,7 @@
                 "Commencer Une Nouvelle Enquête"
             ],
             [
-                "Pas votre langue?",
+                "Français",
                 "Сontacter",
                 "À Propos De La Société"
             ]
@@ -186,7 +186,7 @@
                 "Zurück",
                 "Nächste Frage",
                 "Ihr Firmenname",
-                "Verzenden"
+                {"hidden":"Verzenden"}
             ],
             [
                 "Alles erledigt!",
@@ -195,7 +195,7 @@
                 "Neue Umfrage starten"
             ],
             [
-                "Nicht deine Sprache?",
+                "Deutsch",
                 "Kontaktiere uns",
                 "Über das Unternehmen"
             ]
@@ -263,7 +263,7 @@
         "text": [
             [
                 "Здравствуйте,",
-                "Мы дизайн команда belvg, и мы хотели бы задать вам несколько вопросов, чтобы помочь нам создать лучший вариант дизайна для вашего проекта",
+                "Мы дизайн команда BelVG, и мы хотели бы задать вам несколько вопросов, чтобы помочь нам создать лучший вариант дизайна для вашего проекта",
                 "Начать опрос"
             ],
             [
@@ -281,7 +281,7 @@
                 "Начать новый опрос"
             ],
             [
-                "Не ваш язык?",
+                "Русский",
                 "Связаться с нами",
                 "О компании"
             ]
