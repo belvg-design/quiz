@@ -185,17 +185,6 @@ function checkInput(e){
     }
     forward.disabled = false;
     return true;
-    //console.log("input", `"${input.value.trim()}"`,input.value.trim()=="");
 }
 
 for(let i of document.querySelectorAll("img"))i.setAttribute("draggable","false");
-
-//Effects
-/*
-sectionQuestion.style.setProperty("animation", "1s 1 normal blink");
-setTimeout(()=>{
-    sectionQuestion.style.setProperty("animation", "none");
-}, 1000)
-setTimeout(()=>{
-}, 500)
-*/
