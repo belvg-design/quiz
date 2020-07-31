@@ -28,6 +28,8 @@
 
 @media screen and (min-width: 376px){
   :root{
+    --main-container-width: 1210px;
+    /*fonts*/
     --article-headline: 48px;
     --question: 30px;
     --article-p: 22px;
@@ -43,6 +45,8 @@
 }
 @media screen and (max-width: 375px){
   :root{
+    --main-container-width: 100%;
+    /*fonts*/
     --article-headline: 26px;
     --question: 26px;
     --article-p: 16px;
@@ -70,10 +74,9 @@ body {
 main{
   background: #FFFFFF;
   border-radius: 14px;
-  width: 1210px;
+  width: var(--main-container-width);
   align-self: center;
   box-sizing: border-box;
-  min-height: 20vw;
   display: flex;
   flex-direction: column;
   justify-self: center;
@@ -99,7 +102,7 @@ footer {
   display: flex;
   flex-direction: row;
   align-self: center;
-  width: 1210px;
+  width: var(--main-container-width);
   justify-content: space-between;
   height: 100px;
   align-items: center;
