@@ -35,6 +35,7 @@
     --article-p-description-margin-top: 34px;
     --article-p-margin-top: 25px;
     --question-container-width: 670px;
+    --question-container-padding: 70px 0;
     /*fonts*/
     --article-headline: 48px;
     --question: 30px;
@@ -62,6 +63,11 @@
     margin: 25px 0;
   }
   
+  .hidden{
+    visibility: hidden;
+    opacity: 0;
+  }
+    
   .start, .end{
     flex-direction: row;
     justify-content: space-between;
@@ -94,7 +100,8 @@
     --button-height: 40px;
     --article-p-description-margin-top: 12px;
     --article-p-margin-top: 15px;
-    --question-container-width: calc(100% - 40px);
+    --question-container-width: 100%;
+    --question-container-padding: 35px 20px;
     /*fonts*/
     --article-headline: 26px;
     --question: 26px;
@@ -122,6 +129,10 @@
     margin: 25px 16px;
   }
   
+  .hidden{
+    display:none;
+  }
+
   .start, .end{
     width: 100%;
     flex-direction: column;
@@ -143,6 +154,12 @@
 
   .buttons{
     flex-direction: column-reverse;
+  }
+  .buttons > .button:last-child {
+      margin-top: 25px;
+  }
+  .buttons > .button {
+      margin-top: 15px;
   }
 }
 
@@ -287,10 +304,6 @@ footer > div > a:first-child{
   opacity: 0.1;
 }
 
-.hidden{
-  visibility: hidden;
-  opacity: 0;
-}
 .none{
   display: none!important;
 }
@@ -326,9 +339,10 @@ footer > div > a:first-child{
 
 .question{
   flex-direction: column;
-  padding: 71px 0;
+  padding: var(--question-container-padding);
   width: var(--question-container-width);
   align-self: center;
+  box-sizing: border-box;
 }
 
 #questionNumber{
