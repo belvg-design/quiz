@@ -32,6 +32,9 @@
     --button-width: 250px;
     --button-margin-top: 50px;
     --button-height: 50px;
+    --article-p-description-margin-top: 34px;
+    --article-p-margin-top: 25px;
+    --question-container-width: 670px;
     /*fonts*/
     --article-headline: 48px;
     --question: 30px;
@@ -69,22 +72,18 @@
   }
   .start > div, .end > div{
     padding: 140px 75px 100px 85px;
-    display: flex;
-    flex-direction: column;
     width: 520px;
   }
-  .start > div > span, .end > div > span{
-    font-weight: bold;
-    font-size: var(--article-headline);
-    line-height: 130%;
-    color: #000000;
+  .end > img{
+    padding: 95px 95px 95px 0;
   }
-  .start > div > p, .end > div > p{
-    font-weight: 300;
-    font-size: var(--article-p);
-    line-height: 150%;
-    color: #666666;
-    margin-top: 25px;
+  .end > div{
+    padding: 140px 0 115px 95px;
+    width: 420px;
+  }
+
+  .buttons{
+    flex-direction: row;
   }
 }
 @media screen and (max-width: 375px){
@@ -93,6 +92,9 @@
     --button-width: 100%;
     --button-margin-top: 25px;
     --button-height: 40px;
+    --article-p-description-margin-top: 12px;
+    --article-p-margin-top: 15px;
+    --question-container-width: calc(100% - 40px);
     /*fonts*/
     --article-headline: 26px;
     --question: 26px;
@@ -119,7 +121,7 @@
     box-shadow: 0px 50px 200px rgba(0, 0, 0, 0.07);
     margin: 25px 16px;
   }
-
+  
   .start, .end{
     width: 100%;
     flex-direction: column;
@@ -133,25 +135,14 @@
   .start > div, .end > div{
     box-sizing: border-box;
     padding: 25px 20px;
-    display: flex;
-    flex-direction: column;
     width: 100%;
   }
   .start > div{
     padding-top:0;
   }
-  .start > div > span, .end > div > span{
-    font-weight: bold;
-    font-size: var(--article-headline);
-    line-height: 130%;
-    color: #000000;
-  }
-  .start > div > p, .end > div > p{
-    font-weight: 300;
-    font-size: var(--article-p);
-    line-height: 150%;
-    color: #666666;
-    margin-top: 15px;
+
+  .buttons{
+    flex-direction: column-reverse;
   }
 }
 
@@ -310,43 +301,33 @@ footer > div > a:first-child{
 .end, .question{
   display: none;
 }
-
-.start, .end{
-  width: 100%;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.start > img, .end > img{
-  box-sizing: border-box;
-  width: 100%;
-  padding: 25px 20px;
-}
 .start > div, .end > div{
-  box-sizing: border-box;
-  padding: 25px 20px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.start > div{
-  padding-top:0;
+.start > div > span, .end > div > span{
+  font-weight: bold;
+  font-size: var(--article-headline);
+  line-height: 130%;
+  color: #000000;
 }
-
-.end > img{
-  padding: 95px 95px 95px 0;
-}
-.end > div{
-  padding: 140px 0 115px 95px;
-  width: 420px;
+.start > div > p, .end > div > p{
+  font-weight: 300;
+  font-size: var(--article-p);
+  line-height: 150%;
+  color: #666666;
+  margin-top: var(--article-p-margin-top);
 }
 .end > div > p.description{
   font-weight: 500;
   font-size: var(--article-p-description);
-  margin-top: var(--art);
+  margin-top: var(--article-p-description-margin-top);
 }
 
 .question{
   flex-direction: column;
   padding: 71px 0;
-  width: 670px;
+  width: var(--question-container-width);
   align-self: center;
 }
 
@@ -416,61 +397,5 @@ textarea ~ .label {
 
 .buttons{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-}
-
-
-
-.start, .end{
-  width: 100%;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.start > img, .end > img{
-  box-sizing: border-box;
-  width: 100%;
-  padding: 25px 20px;
-}
-.start > div, .end > div{
-  box-sizing: border-box;
-  padding: 25px 20px;
-  width: 100%;
-}
-.start > div{
-  padding-top:0;
-}
-
-/* second */
-
-.start, .end{
-  flex-direction: row;
-  justify-content: space-between;
-}
-.start > img, .end > img{
-  width: 520px;
-  padding: 100px 0 100px 75px;
-}
-.start > div, .end > div{
-  padding: 140px 75px 100px 85px;
-  width: 520px;
-}
-
-/*similar*/
-.start > div, .end > div{
-  display: flex;
-  flex-direction: column;
-}
-.start > div > span, .end > div > span{
-  font-weight: bold;
-  font-size: var(--article-headline);
-  line-height: 130%;
-  color: #000000;
-}
-.start > div > p, .end > div > p{
-  font-weight: 300;
-  font-size: var(--article-p);
-  line-height: 150%;
-  color: #666666;
-  margin-top: var(--article-p-margin-top);
 }
