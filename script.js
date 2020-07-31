@@ -1,3 +1,5 @@
+
+
 let start = document.querySelector("#start"),
     sectionStart = document.querySelector("#sectionStart"),
     sectionQuestion = document.querySelector("#sectionQuestion"),
@@ -189,3 +191,4 @@ function checkInput(e){
 }
 
 for(let i of document.querySelectorAll("img"))i.setAttribute("draggable","false");
+window.addEventListener("error",(e)=>{ alert(e); });
