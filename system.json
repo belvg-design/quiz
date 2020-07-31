@@ -89,255 +89,255 @@
     "fr":{
         "text": [
             [
-                "Hi,",
-                "we are belvg design team and we would like to ask you a few questions to help us create the best design option for your project",
-                "Start Survey"
+                "Bonjour,",
+                "nous sommes l'équipe de conception belvg et nous aimerions vous poser quelques questions pour nous aider à créer la meilleure option de conception pour votre projet",
+                "Commencer l'enquête"
             ],
             [
                 "Question",
-                "Type here",
-                "Back",
-                "Next Question",
-                "Your company name"
+                "Tapez ici",
+                "Arrière",
+                "Prochain",
+                "Le nom de votre société"
             ],
             [
-                "All Done!",
-                "We've just received your answers and now we are ready to start analyzing them.",
-                "Stay in touch, our manager will provide you with an update upon completion.",
-                "Start New Survey"
+                "Toutes Les Faire!",
+                "Nous venons de recevoir vos réponses et maintenant nous sommes prêts à commencer l'analyse.",
+                "Restez en contact, notre gestionnaire vous fournira une mise à jour à la fin.",
+                "Commencer Une Nouvelle Enquête"
             ],
             [
-                "Not your Language?",
-                "Contact Us",
-                "About Company"
+                "Pas votre langue?",
+                "Сontacter",
+                "À Propos De La Société"
             ]
         ],
         "questions":[
             {
-                "quest":"Please, explain your business",
-                "descr":"Tell us more about your company. We need to understand from the very beginning how the project will fit into the existing model."
+                "quest":"Veuillez expliquer votre entreprise",
+                "descr":"Parlez-nous de votre entreprise. Nous devons comprendre dès le départ comment le projet s'intégrera dans le modèle existant."
             },
             {
-                "quest":"Your target audience",
-                "descr":"Who will use the site? Please, describe your most preferred customer."
+                "quest":"Votre public cible",
+                "descr":"Qui utilisera le site? Veuillez décrire votre client préféré."
             },
             {
-                "quest":"Traffic generation",
-                "descr":"Why do you think people will come to your site?"
+                "quest":"Génération de trafic",
+                "descr":"Pourquoi pensez-vous que les gens viendront sur votre site?"
             },
             {
-                "quest":"Your main feature",
-                "descr":"Does your company have unique features, products? (consumer qualities, range, price, terms of a transaction, warranty and service, geography, or something else)"
+                "quest":"Votre principale caractéristique",
+                "descr":"Votre entreprise a-t-elle des caractéristiques, des produits uniques? (qualités du consommateur, gamme, prix, conditions d'une transaction, garantie et service, géographie ou autre)"
             },
             {
-                "quest":"Your main goal",
-                "descr":"Please, describe what you intend to receive (customer number database, bring traffic to the site so that more people know about the product or redirects visitors to the main site)"
+                "quest":"Votre objectif principal",
+                "descr":"Veuillez décrire ce que vous avez l'intention de recevoir (base de données des numéros de clients, amener du trafic vers le site afin que plus de gens connaissent le produit ou redirige les visiteurs vers le site principal)"
             },
             {
-                "quest":"Optimization",
-                "descr":"Should the website be optimized for a certain resolution or browser and mobile version?"
+                "quest":"Optimisation",
+                "descr":"Le site Web doit-il être optimisé pour une certaine résolution ou version navigateur et mobile?"
             },
             {
-                "quest":"Your competitors",
-                "descr":"Please provide us with a list of your main competitors."
+                "quest":"Vos concurrents",
+                "descr":"Veuillez nous fournir une liste de vos principaux concurrents."
             },
             {
-                "quest":"Your preferences",
-                "descr":"Please show examples of websites that you like."
+                "quest":"Vos préférences",
+                "descr":"Veuillez montrer des exemples de sites Web que vous aimez."
             },
             {
-                "quest":"Deadlines",
-                "descr":"How long do you think the project should take? Describe the roadmap of your project."
+                "quest":"Dates limites",
+                "descr":"Combien de temps pensez-vous que le projet devrait prendre? Décrivez la feuille de route de votre projet."
             },
             {
-                "quest":"Your old website",
-                "descr":"Did you have a website before? Please give your current website address. "
+                "quest":"Votre ancien site",
+                "descr":"Aviez-vous déjà un site Web? Veuillez indiquer l'adresse actuelle de votre site."
             },
             {
-                "quest":"Your brand identity",
-                "descr":"Do you have your own style or design options? Do you have your own logo?"
+                "quest":"Votre identité de marque",
+                "descr":"Avez-vous votre propre style ou options de design? Avez-vous votre propre logo?"
             },
             {
-                "quest":"Content",
-                "descr":"Could you provide content (text, images) or could we create it from scratch? "
+                "quest":"Contenu",
+                "descr":"Pourriez-vous fournir du contenu (texte, images) ou pourrions-nous le créer à partir de zéro?"
             },
             {
-                "quest":"Additional services",
-                "descr":"What services should be integrated with the page? (if necessary, online chat or call back. Using these services, you can interact with visitors and sell more. "
+                "quest":"Services supplémentaires",
+                "descr":"Quels services doivent être intégrés à la page? (si nécessaire, chat en ligne ou rappel. En utilisant ces services, vous pouvez interagir avec les visiteurs et vendre plus."
             },
             {
-                "quest":"Traffic control",
-                "descr":"How do you plan to track page traffic?"
+                "quest":"Contrôle du trafic",
+                "descr":"Comment comptez-vous suivre le trafic de la page?"
             }
         ]
     },
     "de":{
         "text": [
             [
-                "Hi,",
-                "we are belvg design team and we would like to ask you a few questions to help us create the best design option for your project",
-                "Start Survey"
+                "Guten Tag,",
+                "wir sind ein starkes Designteam und möchten Ihnen einige Fragen stellen, damit wir die beste Designoption für Ihr Projekt finden können",
+                "Umfrage starten"
             ],
             [
-                "Question",
-                "Type here",
-                "Back",
-                "Next Question",
-                "Your company name"
+                "Frage",
+                "Hier eingeben",
+                "Zurück",
+                "Nächste Frage",
+                "Ihr Firmenname"
             ],
             [
-                "All Done!",
-                "We've just received your answers and now we are ready to start analyzing them.",
-                "Stay in touch, our manager will provide you with an update upon completion.",
-                "Start New Survey"
+                "Alles erledigt!",
+                "Wir haben gerade Ihre Antworten erhalten und sind jetzt bereit, sie zu analysieren.",
+                "Bleiben Sie in Kontakt, unser Manager wird Ihnen nach Abschluss ein Update zur Verfügung stellen.",
+                "Neue Umfrage starten"
             ],
             [
-                "Not your Language?",
-                "Contact Us",
-                "About Company"
+                "Nicht deine Sprache?",
+                "Kontaktiere uns",
+                "Über das Unternehmen"
             ]
         ],
         "questions":[
             {
-                "quest":"Please, explain your business",
-                "descr":"Tell us more about your company. We need to understand from the very beginning how the project will fit into the existing model."
+                "quest":"Bitte erkläre dein Geschäft",
+                "descr":"Erzählen Sie uns mehr über Ihr Unternehmen. Wir müssen von Anfang an verstehen, wie das Projekt in das bestehende Modell passt."
             },
             {
-                "quest":"Your target audience",
-                "descr":"Who will use the site? Please, describe your most preferred customer."
+                "quest":"Deine Zielgruppe",
+                "descr":"Wer wird die Website nutzen? Bitte beschreiben Sie Ihren bevorzugten Kunden."
             },
             {
-                "quest":"Traffic generation",
-                "descr":"Why do you think people will come to your site?"
+                "quest":"Verkehrserzeugung",
+                "descr":"Warum werden Ihrer Meinung nach Leute auf Ihre Website kommen?"
             },
             {
-                "quest":"Your main feature",
-                "descr":"Does your company have unique features, products? (consumer qualities, range, price, terms of a transaction, warranty and service, geography, or something else)"
+                "quest":"Dein Hauptfeature",
+                "descr":"Verfügt Ihr Unternehmen über einzigartige Merkmale, Produkte? (Verbraucherqualitäten, Reichweite, Preis, Transaktionsbedingungen, Garantie und Service, Geografie oder etwas anderes)."
             },
             {
-                "quest":"Your main goal",
-                "descr":"Please, describe what you intend to receive (customer number database, bring traffic to the site so that more people know about the product or redirects visitors to the main site)"
+                "quest":"Dein Hauptziel",
+                "descr":"Bitte beschreiben Sie, was Sie erhalten möchten (Kundennummerndatenbank, bringen Sie Traffic auf die Website, damit mehr Personen über das Produkt informiert werden, oder leiten Sie Besucher zur Hauptwebsite weiter)."
             },
             {
-                "quest":"Optimization",
-                "descr":"Should the website be optimized for a certain resolution or browser and mobile version?"
+                "quest":"Optimierung",
+                "descr":"Sollte die Website für eine bestimmte Auflösung oder Browser- und Mobilversion optimiert werden?"
             },
             {
-                "quest":"Your competitors",
-                "descr":"Please provide us with a list of your main competitors."
+                "quest":"Deine Konkurrenten",
+                "descr":"Bitte geben Sie uns eine Liste Ihrer Hauptkonkurrenten."
             },
             {
-                "quest":"Your preferences",
-                "descr":"Please show examples of websites that you like."
+                "quest":"Deine Vorlieben",
+                "descr":"Bitte zeigen Sie Beispiele für Websites, die Ihnen gefallen."
             },
             {
                 "quest":"Deadlines",
-                "descr":"How long do you think the project should take? Describe the roadmap of your project."
+                "descr":"Wie lange sollte das Projekt Ihrer Meinung nach dauern? Beschreiben Sie die Roadmap Ihres Projekts."
             },
             {
-                "quest":"Your old website",
-                "descr":"Did you have a website before? Please give your current website address. "
+                "quest":"Deine alte Website",
+                "descr":"Hatten Sie schon einmal eine Website? Bitte geben Sie Ihre aktuelle Website-Adresse an."
             },
             {
-                "quest":"Your brand identity",
-                "descr":"Do you have your own style or design options? Do you have your own logo?"
+                "quest":"Deine Markenidentität",
+                "descr":"Haben Sie Ihren eigenen Stil oder Ihre eigenen Designoptionen? Haben Sie ein eigenes Logo?"
             },
             {
-                "quest":"Content",
-                "descr":"Could you provide content (text, images) or could we create it from scratch? "
+                "quest":"Inhalt",
+                "descr":"Können Sie Inhalte (Text, Bilder) bereitstellen oder können wir sie von Grund auf neu erstellen?"
             },
             {
-                "quest":"Additional services",
-                "descr":"What services should be integrated with the page? (if necessary, online chat or call back. Using these services, you can interact with visitors and sell more. "
+                "quest":"Zusatzleistungen",
+                "descr":"Welche Dienste sollten in die Seite integriert werden? (falls erforderlich, Online-Chat oder Rückruf. Mit diesen Diensten können Sie mit Besuchern interagieren und mehr verkaufen."
             },
             {
-                "quest":"Traffic control",
-                "descr":"How do you plan to track page traffic?"
+                "quest":"Verkehrskontrolle",
+                "descr":"Wie wollen Sie den Seitenverkehr verfolgen?"
             }
         ]
     },
     "ru":{
         "text": [
             [
-                "Привет,",
-                "we are belvg design team and we would like to ask you a few questions to help us create the best design option for your project",
-                "Start Survey"
+                "Здравствуйте,",
+                "Мы дизайн команда belvg, и мы хотели бы задать вам несколько вопросов, чтобы помочь нам создать лучший вариант дизайна для вашего проекта",
+                "Начать опрос"
             ],
             [
                 "Вопрос",
-                "Вводите здесь",
-                "Back",
-                "Next Question",
-                "Your company name"
+                "Введите здесь",
+                "Назад",
+                "Следующий вопрос",
+                "Название вашей компании"
             ],
             [
-                "All Done!",
-                "We've just received your answers and now we are ready to start analyzing them.",
-                "Stay in touch, our manager will provide you with an update upon completion.",
-                "Start New Survey"
+                "Все готово!",
+                "Мы только что получили ваши ответы, и теперь мы готовы начать их анализ.",
+                "Оставайтесь на связи, наш менеджер бедет держать вас в курсе.",
+                "Начать новый опрос"
             ],
             [
-                "Not your Language?",
-                "Contact Us",
-                "About Company"
+                "Не ваш язык?",
+                "Связаться с нами",
+                "О компании"
             ]
         ],
         "questions":[
             {
-                "quest":"Please, explain your business",
-                "descr":"Tell us more about your company. We need to understand from the very beginning how the project will fit into the existing model."
+                "quest":"Пожалуйста, объясните как работает ваш бизнес",
+                "descr":"Расскажите нам больше о вашей компании. Нам нужно с самого начала понять, как проект будет вписываться в существующую бизнес модель"
             },
             {
-                "quest":"Your target audience",
-                "descr":"Who will use the site? Please, describe your most preferred customer."
+                "quest":"Ваша целевая аудитория",
+                "descr":"Кто будет использовать сайт? Пожалуйста, опишите клиента который подходит вм лучше всего."
             },
             {
-                "quest":"Traffic generation",
-                "descr":"Why do you think people will come to your site?"
+                "quest":"Создание трафика",
+                "descr":"Как вы думаете, почему люди приходят на ваш сайт?"
             },
             {
-                "quest":"Your main feature",
-                "descr":"Does your company have unique features, products? (consumer qualities, range, price, terms of a transaction, warranty and service, geography, or something else)"
+                "quest":"То что отличает вас от других",
+                "descr":"Есть ли у вашей компании уникальные предложения, продукты? (гарантии качества, ассортимент, цена, условия сделки, гарантия и обслуживание, география доставки или что-то еще)"
             },
             {
-                "quest":"Your main goal",
-                "descr":"Please, describe what you intend to receive (customer number database, bring traffic to the site so that more people know about the product or redirects visitors to the main site)"
+                "quest":"Ваша главная цель",
+                "descr":"Пожалуйста, опишите, что вы намереваетесь получить (база данных номеров клиентов, привлечь трафик на сайт, чтобы больше людей узнали о продукте либо перенаправть посетителей на основной сайт)"
             },
             {
-                "quest":"Optimization",
-                "descr":"Should the website be optimized for a certain resolution or browser and mobile version?"
+                "quest":"Оптимизация",
+                "descr":"Должен ли сайт быть оптимизирован под определенное разрешение или браузер, иметь мобильную версию?"
             },
             {
-                "quest":"Your competitors",
-                "descr":"Please provide us with a list of your main competitors."
+                "quest":"Ваши конкуренты",
+                "descr":"Пожалуйста, предоставьте нам список ваших главных конкурентов."
             },
             {
-                "quest":"Your preferences",
-                "descr":"Please show examples of websites that you like."
+                "quest":"Ваши предпочтения",
+                "descr":"Пожалуйста, покажите примеры веб-сайтов, которые вам нравятся."
             },
             {
-                "quest":"Deadlines",
-                "descr":"How long do you think the project should take? Describe the roadmap of your project."
+                "quest":"Сроки",
+                "descr":"Как вы думаете, сколько времени займет проект? Опишите дорожную карту вашего проекта."
             },
             {
-                "quest":"Your old website",
-                "descr":"Did you have a website before? Please give your current website address. "
+                "quest":"Ваш старый сайт",
+                "descr":"Был ли у вас веб-сайт до этого? Пожалуйста, укажите адрес вашего текущего веб-сайта."
             },
             {
-                "quest":"Your brand identity",
-                "descr":"Do you have your own style or design options? Do you have your own logo?"
+                "quest":"Ваш бренд",
+                "descr":"Имеете ли вы свой фирменный стиль или варианты дизайна? Есть ли у вас собственный логотип?"
             },
             {
-                "quest":"Content",
-                "descr":"Could you provide content (text, images) or could we create it from scratch? "
+                "quest":"Наполнение",
+                "descr":"Готовы ли вы предоставить контент (текст, изображения) или нам потребуется создать это с нуля?"
             },
             {
-                "quest":"Additional services",
-                "descr":"What services should be integrated with the page? (if necessary, online chat or call back. Using these services, you can interact with visitors and sell more. "
+                "quest":"Дополнительные сервисы",
+                "descr":"Какие сервисы должны быть интегрированы со веб страницей? (при необходимости, онлайн-чат или кнопка с обратным звоноком. Используя эти сервисы, вы можете взаимодействовать с посетителями и увеличить продажи."
             },
             {
-                "quest":"Traffic control",
-                "descr":"How do you plan to track page traffic?"
+                "quest":"Контроль трафика",
+                "descr":"Как вы планируете отслеживать трафик на сайте?"
             }
         ]
     }

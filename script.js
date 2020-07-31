@@ -3,7 +3,7 @@ let start = document.querySelector("#start"),
     sectionQuestion = document.querySelector("#sectionQuestion"),
     sectionEnd = document.querySelector("#sectionEnd"),
     langChanger = document.querySelector("#langChanger"),
-    langChanger = document.querySelector("#language");
+    language = document.querySelector("#language");
 
 let system,
     lang,
@@ -34,7 +34,7 @@ fetch("system.json")
 
 function openLang(e){
     language.classList.remove("hidden");
-    if(e.target == langChanger)
+    if(e.target == langChanger.firstElementChild)
         e.stopPropagation();
 }
 function closeLang(e){
@@ -46,8 +46,9 @@ function compositeLangs(langData, defaultLang){
         li.innerText = langData[key];
         li.addEventListener("click",(e)=>{
             language.querySelector(".current").classList.remove("current");
-            setlang(key);
+            setLang(key);
             e.target.classList.add("current");
+            e.stopPropagation();
         })
         if(key == defaultLang) li.classList.add("current");
         language.appendChild(li);
@@ -60,6 +61,7 @@ function setLang(lang){
     text = system[lang].text;
 
     refreshLang();
+    nextQuestion(current);
 }
 function refreshLang(){
     for(let s=0; s<text.length; s++){
