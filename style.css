@@ -47,6 +47,7 @@ main{
   flex-direction: column;
   justify-self: center;
   box-shadow: 0px 50px 200px rgba(0, 0, 0, 0.07);
+  margin: 25px 0;
 }
 
 div.shadow{
