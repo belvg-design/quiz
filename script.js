@@ -81,7 +81,23 @@ function refreshLang(){
     }
 }
 function receive(){
-    let 
+    const formData = new FormData();
+    formData.append('company', company.value);
+    formData.append('answers', JSON());
+
+    fetch(key, {
+    method: 'POST',
+    mode: 'cors',
+    cache: 'default',
+    body: formData
+    })
+    .then(response => response.json())
+    .then(result => {
+    console.log('Success:', result);
+    })
+    .catch(error => {
+    console.error('Error:', error);
+    });
 }
 
 function nextQuestion(number){
