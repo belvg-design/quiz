@@ -28,24 +28,32 @@
 
 @media screen and (min-width: 376px){
   :root{
-    --headline: 48px;
-    --subheadline: 30px;
-    --caption: 22px;
-    --subcaption: 18px;
-    --text: 16px;
+    --article-headline: 48px;
+    --question: 30px;
+    --article-p: 22px;
+    --question-descr: 22px;
+    --button: 18px;
+    --question-number: 18px;
+    --question-input: 16px;
+    --article-p-description: 16px;
+    --question-label: 16px;
     --footer-link: 16px;
     --language-link: 14px;
-    --subtext: 14px;
   }
 }
 @media screen and (max-width: 375px){
   :root{
-    --headline: 48px;
-    --subheadline: 30px;
-    --caption: 22px;
-    --subcaption: 18px;
-    --text: 16px;
-    --subtext: 14px;
+    --article-headline: 26px;
+    --question: 26px;
+    --article-p: 16px;
+    --question-descr: 16px;
+    --button: 14px;
+    --question-number: 14px;
+    --question-input: 14px;
+    --article-p-description: 16px;
+    --question-label: 14px;
+    --footer-link: 15px;
+    --language-link: 14px;
   }
 }
 
@@ -99,7 +107,7 @@ footer {
 }
 footer > div > a {
   font-weight: 300;
-  font-size: 16px;
+  font-size: var(--footer-link);
   line-height: 135%;
   color: #838383;
   padding-right: 30px;
@@ -156,7 +164,7 @@ footer > div > a:first-child{
 }
 #language li {
   font-weight: 300;
-  font-size: 14px;
+  font-size: var(--language-link);
   line-height: 180%;
   color: #666666;
   padding-left: 20px;
@@ -181,7 +189,7 @@ footer > div > a:first-child{
   height: 50px;
   box-sizing: border-box;
   font-weight: 300;
-  font-size: 18px;
+  font-size: var(--button);
   line-height: 150%;
   color: #FFFFFF;
   margin-top: 50px;
@@ -235,13 +243,13 @@ footer > div > a:first-child{
 }
 .start > div > span, .end > div > span{
   font-weight: bold;
-  font-size: 48px;
+  font-size: var(--article-headline);
   line-height: 130%;
   color: #000000;
 }
 .start > div > p, .end > div > p{
   font-weight: 300;
-  font-size: 22px;
+  font-size: var(--article-p);
   line-height: 150%;
   color: #666666;
   margin-top: 25px;
@@ -256,7 +264,7 @@ footer > div > a:first-child{
 }
 .end > div > p.description{
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--article-p-description);
   margin-top: 34px;
 }
 
@@ -269,7 +277,7 @@ footer > div > a:first-child{
 
 #questionNumber{
   font-weight: 300;
-  font-size: 18px;
+  font-size: var(--question-number);
   line-height: 150%;
   text-align: center;
   color: #999999;
@@ -277,7 +285,7 @@ footer > div > a:first-child{
 
 #question{
   font-weight: bold;
-  font-size: 30px;
+  font-size: var(--question);
   line-height: 130%;
   text-align: center;
   color: #000000;
@@ -286,7 +294,7 @@ footer > div > a:first-child{
 
 #description{
   font-weight: 300;
-  font-size: 22px;
+  font-size: var(--question-descr);
   line-height: 150%;
   text-align: center;
   color: #666666;
@@ -295,7 +303,7 @@ footer > div > a:first-child{
 
 .label, .label span{
   font-weight: 300;
-  font-size: 16px;
+  font-size: var(--question-label);
   line-height: 150%;
   color: #FF3366;
   margin-top: 64px;
@@ -317,7 +325,7 @@ textarea ~ .label {
   margin-top: 10px;
   outline: none;
   font-weight: 300;
-  font-size: 16px;
+  font-size: var(--question-input);
   line-height: 150%;
   display: flex;
   align-items: center;
