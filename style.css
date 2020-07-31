@@ -26,7 +26,28 @@
 
 }
 
-@media screen and 
+@media screen and (min-width: 376px){
+  :root{
+    --headline: 48px;
+    --subheadline: 30px;
+    --caption: 22px;
+    --subcaption: 18px;
+    --text: 16px;
+    --footer-link: 16px;
+    --language-link: 14px;
+    --subtext: 14px;
+  }
+}
+@media screen and (max-width: 375px){
+  :root{
+    --headline: 48px;
+    --subheadline: 30px;
+    --caption: 22px;
+    --subcaption: 18px;
+    --text: 16px;
+    --subtext: 14px;
+  }
+}
 
 body {
   display: flex;
