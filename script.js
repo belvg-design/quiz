@@ -82,8 +82,14 @@ function refreshLang(){
 }
 function receive(){
     const formData = new FormData();
-    formData.append('company', company.value);
-    formData.append('answers', JSON());
+    let answer = { "company_name": company.value};
+    for(let i=0; i<questions.length; i++){
+        answer[i] = { 
+            "question": questions[i].quest,
+            "answer": answers[i]
+        }
+    }
+    formData.append('json', JSON.stringify(answer));
 
     fetch(key, {
     method: 'POST',
@@ -124,6 +130,7 @@ function nextQuestion(number){
 function goForward(e){
     if(!checkInput()) return;
     if((current + 1)==questions.length){
+        receive();
         sectionQuestion.style.setProperty("animation", "1s 1 normal blink");
         sectionEnd.style.setProperty("animation", "0.5s 1 normal blinkOut");
         setTimeout(()=>{
