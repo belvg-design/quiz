@@ -36,6 +36,8 @@
     --article-p-margin-top: 25px;
     --question-container-width: 670px;
     --question-container-padding: 70px 0;
+    --question-label-margin-top: 64px;
+    --question-label-margin-between: 25px;
     /*fonts*/
     --article-headline: 48px;
     --question: 30px;
@@ -102,6 +104,8 @@
     --article-p-margin-top: 15px;
     --question-container-width: 100%;
     --question-container-padding: 35px 20px;
+    --question-label-margin-top: 25px;
+    --question-label-margin-between: 15px;
     /*fonts*/
     --article-headline: 26px;
     --question: 26px;
@@ -130,7 +134,7 @@
   }
   
   .hidden{
-    display:none;
+    display:none!important;
   }
 
   .start, .end{
@@ -160,6 +164,10 @@
   }
   .buttons > .button {
       margin-top: 15px;
+  }
+  
+  #langChanger img{
+    display: none;
   }
 }
 
@@ -376,13 +384,13 @@ footer > div > a:first-child{
   font-size: var(--question-label);
   line-height: 150%;
   color: #FF3366;
-  margin-top: 64px;
+  margin-top: var(--question-label-margin-top);
 }
 .label > span{
   color: #000000;
 }
 textarea ~ .label {
-  margin-top: 25px;
+  margin-top: var(--question-label-margin-between);
 }
 
 #input, #company{
