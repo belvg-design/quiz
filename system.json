@@ -5,7 +5,7 @@
         "text": [
             [
                 "Hi,",
-                "we are belvg design team and we would like to ask you a few questions to help us create the best design option for your project",
+                "we are BelVG design team and we would like to ask you a few questions to help us create the best design option for your project",
                 "Start Survey"
             ],
             [
@@ -91,7 +91,7 @@
         "text": [
             [
                 "Bonjour,",
-                "nous sommes l'équipe de conception belvg et nous aimerions vous poser quelques questions pour nous aider à créer la meilleure option de conception pour votre projet",
+                "nous sommes l'équipe de conception BelVG et nous aimerions vous poser quelques questions pour nous aider à créer la meilleure option de conception pour votre projet",
                 "Commencer l'enquête"
             ],
             [
@@ -262,8 +262,8 @@
     "ru":{
         "text": [
             [
-                "Здравствуйте,",
-                "Мы дизайн команда BelVG, и мы хотели бы задать вам несколько вопросов, чтобы помочь нам создать лучший вариант дизайна для вашего проекта",
+                "Привет,",
+                "Мы дизайн команда BelVG, и хотели бы задать вам несколько вопросов. Это поможет нам в создании лучшего дизайна для вашего проекта.",
                 "Начать опрос"
             ],
             [
@@ -276,7 +276,7 @@
             ],
             [
                 "Все готово!",
-                "Мы только что получили ваши ответы, и теперь мы готовы начать их анализ.",
+                "Мы только что получили ваши ответы, и теперь готовы начать их анализ.",
                 "Оставайтесь на связи, наш менеджер бедет держать вас в курсе.",
                 "Начать новый опрос"
             ],
@@ -289,15 +289,15 @@
         "questions":[
             {
                 "quest":"Пожалуйста, объясните как работает ваш бизнес",
-                "descr":"Расскажите нам больше о вашей компании. Нам нужно с самого начала понять, как проект будет вписываться в существующую бизнес модель"
+                "descr":"Расскажите нам больше о вашей компании. Нам нужно с самого начала понять, как проект будет вписываться в существующую бизнес модель."
             },
             {
                 "quest":"Ваша целевая аудитория",
-                "descr":"Кто будет использовать сайт? Пожалуйста, опишите клиента который подходит вм лучше всего."
+                "descr":"Кто будет использовать сайт? Пожалуйста, опишите клиента который наиболее вам подходит."
             },
             {
                 "quest":"Создание трафика",
-                "descr":"Как вы думаете, почему люди приходят на ваш сайт?"
+                "descr":"Как вы думаете, почему люди будут посещать ваш сайт?"
             },
             {
                 "quest":"То что отличает вас от других",

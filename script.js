@@ -34,7 +34,7 @@ fetch("system.json")
 
 function openLang(e){
     language.classList.remove("hidden");
-    if(e.target == langChanger.firstElementChild)
+    if(e.target == langChanger.firstElementChild || e.target == langChanger.children[1])
         e.stopPropagation();
 }
 function closeLang(e){
@@ -99,6 +99,12 @@ function goForward(e){
         sectionEnd.style.setProperty("display", "flex");
         return;
     }
+    sectionQuestion.style.setProperty("animation", "1s 1 normal blink");
+    setTimeout(()=>{
+        sectionQuestion.style.setProperty("animation", "none");
+    }, 1000)
+    setTimeout(()=>{
+    }, 500)
     answers[current] = input.value;
     current++;
     nextQuestion(current);
@@ -129,6 +135,7 @@ function checkInput(e){
     //console.log("input", `"${input.value.trim()}"`,input.value.trim()=="");
 }
 
+for(let i of document.querySelectorAll("img")) i.setAttribute("draggable","false");
 
 //Effects
 /*
