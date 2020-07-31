@@ -204,9 +204,10 @@ footer > div > a:first-child{
   padding: 100px 0 100px 75px;
 }
 .start > div, .end > div{
-  padding: 170px 75px 140px 85px;
+  padding: 140px 75px 100px 85px;
   display: flex;
   flex-direction: column;
+  width: 520px;
 }
 .start > div > span, .end > div > span{
   font-weight: bold;

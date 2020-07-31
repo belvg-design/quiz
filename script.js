@@ -17,9 +17,11 @@ fetch("system.json")
     .then(response => response.json())
     .then(json =>{
         system = json;
-        lang = system.default;
+        if(localStorage && localStorage.getItem("lang")) lang = localStorage.getItem("lang");
+        else lang = system.default;
         setLang(lang);
         compositeLangs(system.lang, lang);
+        refreshLang();
         start.addEventListener("click",(e)=>{
             sectionStart.style.setProperty("animation", "1s 1 normal blink");
             sectionQuestion.style.setProperty("animation", "0.5s 1 normal blinkOut");
@@ -70,6 +72,7 @@ function setLang(lang){
     if(!system.lang[lang]) lang = system.default;
     questions = system[lang].questions;
     text = system[lang].text;
+    if(localStorage) localStorage.setItem("lang",lang);
 }
 function refreshLang(){
     for(let s=0; s<text.length; s++){
