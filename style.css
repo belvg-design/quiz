@@ -96,10 +96,6 @@
     flex-direction: row;
   }
 
-  footer{
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
 @media screen and (max-width: 375px){
   :root{
@@ -175,22 +171,11 @@
       margin-top: 15px;
   }
   
-  #langChanger img{
+  footer > .links > a{
     display: none;
   }
-
-  footer{
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  footer > .links{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content:space-between;
-  }
-  footer > .links > a{
-    padding-right: 0;
+  #langChanger{
+    display:initial;
   }
 }
 
@@ -220,6 +205,8 @@ footer {
   position: absolute;
   top: var(--footer-top);
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-self: center;
   width: var(--main-container-width);
   height: 100px;
