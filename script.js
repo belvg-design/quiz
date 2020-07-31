@@ -11,6 +11,7 @@ let system,
     lang,
     questions,
     answers = [],
+    companyName = null,
     current = 0;
 
 fetch("system.json")

@@ -161,13 +161,13 @@
     padding: 25px 20px;
     width: 100%;
   }
-  .start > div{
+  .start > div, .end > div{
     padding-top:0;
   }
   .end, .buttons{
     flex-direction: column-reverse;
   }
-  
+
   .buttons > .button:last-child {
       margin-top: 25px;
   }
