@@ -7,7 +7,7 @@ let start = document.querySelector("#start"),
     langChanger = document.querySelector("#langChanger"),
     language = document.querySelector("#language");
 
-const key = "https://formspree.io/mbjzwlpg";
+const key = "https://formspree.io/f/xvodkwvr";
 
 let system,
     lang,
